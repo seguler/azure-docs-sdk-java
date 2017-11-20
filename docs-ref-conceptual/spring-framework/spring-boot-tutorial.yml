@@ -53,7 +53,7 @@ items:
 
     Retrieve the Cosmos DB access key to allow the sample to authenticate with Azure.
     ```azurecli-interactive
-    az cosmosdb list-keys -g mySpringBootResourceGroup -n mySpringBootCosmosDB
+    az cosmosdb list-keys -g mySpringBootResourceGroup -n todoappdb
     ```
 
     In your local project, configure your application to connect to Cosmos DB. Open `src/main/resources/application.properties`
@@ -128,7 +128,13 @@ items:
 - title: Secure the sample app with Azure Active Directory
   durationInMinutes: 4
   content: |
-    Markdown goes here.
+    The sample you've deployed is currently accessible to the entire internet. In this step, you'll restrict
+    access to the application using Azure Active Directory.
+
+    > [!NOTE]
+    > This step requires you have the ability to create App registrations in your Azure AD tenant.
+
+        
 - title: Manage application secrets with Azure Key Vault
   durationInMinutes: 3
   content: |
