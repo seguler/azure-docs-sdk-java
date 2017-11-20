@@ -180,15 +180,103 @@ items:
      ran the app locally appear since both application instances use the same Cosmos DB database.
 
 - title: Secure the sample app
-  durationInMinutes: 4
+  durationInMinutes: 10
   content: |
-    The sample you've deployed is currently accessible to the entire internet. In this step, you'll restrict
-    access to the application using Azure Active Directory.
+    The sample you've deployed is currently accessible to the entire internet. In this step, you'll control 
+    access to the sample with Azure Active Directory.
 
     > [!NOTE]
     > This step requires you have the ability to create App registrations in your Azure AD tenant.
 
-        
+    Create a new app registration in Azure AD:
+    ```azurecli
+    az ad app create  \
+    --display-name my-unique-app-name
+    --homepage http://my-unique-app-name.azurewebsites.net
+    --identifier-uris http://my-unique-app-name
+    ```
+
+    Retrieve the application key for the app registration:
+    ```azurecli
+    ?
+    ```
+
+    Update `src/main/resources/application.properties` to add the following three lines to confiugre Spring Security to use use the Azure AD app registration:
+    ```
+    azure.activedirectory.clientId=aaaaaaaa-bbbb-cccc-dddd-eeeeeeeee
+    azure.activedirectory.clientSecret=put-your-application-key-here
+    azure.activedirectory.ActiveDirectoryGroups=group1,group2
+    ```
+
+    Edit the project `pom.xml` and add the following depedencies:
+
+    ```XML
+  <dependency>
+    <groupId>org.springframework.security</groupId>
+    <artifactId>spring-security-config</artifactId>
+  </dependency>
+  <dependency>
+    <groupId>org.springframework.security.oauth</groupId>
+    <artifactId>spring-security-oauth2</artifactId>
+  </dependency>
+  <dependency>
+    <groupId>com.microsoft.azure</groupId>^M
+    <artifactId>azure-ad-integration-spring-boot-starter</artifactId>
+    <version>${azure.spring.boot.starter.version}</version>
+  </dependency>
+    ```
+
+  Create a new source file at `src/main/java/com/microsoft/azure/sample/security/WebSecurityConfig.java` in the project with the following contents:
+
+  ```java
+  package com.microsoft.azure.spring.boot.autoconfigure.aad.sample.security;
+
+import com.microsoft.azure.spring.boot.autoconfigure.aad.AADAuthenticationFilter;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
+
+@EnableOAuth2Sso
+@EnableGlobalMethodSecurity(securedEnabled = true,
+        prePostEnabled = true)
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Autowired
+    private AADAuthenticationFilter aadAuthFilter;
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+
+        http.authorizeRequests().antMatchers("/home").permitAll();
+        http.authorizeRequests().antMatchers("/api/**").authenticated();
+
+        http.logout().logoutSuccessUrl("/").permitAll();
+
+        http.authorizeRequests().anyRequest().permitAll();
+
+        http.csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
+
+        http.addFilterBefore(aadAuthFilter, UsernamePasswordAuthenticationFilter.class);
+    }
+}
+  ```
+
+  Update `src/main/java/com/microsoft/azure/sample/controller/TodoListController.java` to authorize members of the allowed Active Directory groups to access 
+  `/api/todolist` in the application
+
+  ```java
+  @PreAuthorize("hasRole('ROLE_group1')")
+  @RequestMapping(value = "/api/todolist", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE})
+  public ResponseEntity<?> getAllTodoItems() { 
+    ...
+  ```
+
+  Build and run the sample locally to test the secure configuration.
+
 - title: Manage secrets Azure Key Vault
   durationInMinutes: 3
   content: |
