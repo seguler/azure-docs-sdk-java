@@ -210,10 +210,10 @@ items:
     </dependency>
     ```
 
-  Create a new source file at `src/main/java/com/microsoft/azure/sample/security/WebSecurityConfig.java` in the project with the following contents:
+  Create a new source file at 'src/main/java/com/microsoft/azure/sample/security/WebSecurityConfig.java' in the project with the following contents:
 
   ```java
-    package com.microsoft.azure.spring.boot.autoconfigure.aad.sample.security;
+  package com.microsoft.azure.spring.boot.autoconfigure.aad.sample.security;
 
   import com.microsoft.azure.spring.boot.autoconfigure.aad.AADAuthenticationFilter;
   import org.springframework.beans.factory.annotation.Autowired;
