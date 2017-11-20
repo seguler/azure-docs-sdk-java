@@ -110,7 +110,8 @@ items:
     In this step, you'll package the sample as a  Docker container, push the image to Azure Container Registry, and then 
     deploy the image Azure App Service for Containers.
 
-    Create the Azure Container Registry:
+    Create the Azure Container Registry:  
+    
     ```azurecli
     az acr create -n my-unique-registry-name -g mySpringBootResourceGroup --sku Basic --admin-enabled
     ```
@@ -126,7 +127,7 @@ items:
     ```
 
     Retrieve the username and  password to your container registry. You'll need them to configure Maven in the next step.
-    
+
     ```azurecli
     az acr credential show -n my-unique-registry-name
     ```
