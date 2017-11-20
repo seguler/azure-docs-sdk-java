@@ -158,24 +158,21 @@ items:
      mvn clean package docker:build docker:push
      ```
 
-     Deploy the pushed image to Azure App Service for Containers:
+     Deploy the pushed image to Azure App Service for Containers: 
      ```
      mvn azure-webapp:deploy
      ```
 
      Open the application once it's finished deploying in your web browser. You'll note that the todo list items added when you
      ran the app locally appear since both application instances use the same Cosmos DB database.
-
 - title: Secure the sample app
   durationInMinutes: 10
   content: |
     The sample you've deployed is currently accessible to the entire internet. In this step, you'll control 
     access to the sample with Azure Active Directory.
 
-    > [!NOTE]
-    > This step requires you have the ability to create App registrations in your Azure AD tenant.
-
     Create a new app registration in Azure AD:
+     
     ```
     az ad app create  \
     --display-name my-unique-app-name
@@ -189,10 +186,10 @@ items:
     az ad app
     ```
 
-    Update `src/main/resources/application.properties` to add the following three lines to confiugre Spring Security to use use the Azure AD app registration: 
+    Update src/main/resources/application.properties to add the following three lines to confiugre Spring Security to use use the Azure AD app registration: 
 
 
-    Edit the project `pom.xml` and add the following depedencies:
+    Edit the project pom.xml and add the following depedencies:
 
     ```XML
     <dependency>
@@ -210,7 +207,7 @@ items:
     </dependency>
     ```
 
-  Create a new source file at 'src/main/java/com/microsoft/azure/sample/security/WebSecurityConfig.java' in the project with the following contents:
+  Create a new source file at src/main/java/com/microsoft/azure/sample/security/WebSecurityConfig.java in the project with the following contents:
 
   ```java
   package com.microsoft.azure.spring.boot.autoconfigure.aad.sample.security;
@@ -260,7 +257,6 @@ items:
   ```
 
   Build and run the sample locally to test the secure configuration.
-
 - title: Manage secrets Azure Key Vault
   durationInMinutes: 3
   content: |
