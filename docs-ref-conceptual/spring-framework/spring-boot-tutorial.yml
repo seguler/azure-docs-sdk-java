@@ -131,7 +131,8 @@ items:
     ```
 
     You'll see two passwords and a username in the output:
-    ```
+
+    ```json
     {
   "passwords": [
      {
@@ -280,12 +281,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 - title: Manage secrets Azure Key Vault
   durationInMinutes: 3
   content: |
-    Markdown goes here.
+    Access to the sample application is now secured, but the code that builds the application isn't-the `src/main/resources/application.properties` file contains hardcoded
+    access keys. These need to be kept outside of version control
 - title: Deploy to Kubernetes
   durationInMinutes: 4
   href: ./virtual-machines-linux-tutorial-vm-6-common-tasks.md
   content: |
-    Markdown goes here.
+    TODO
 - href: ./next-steps.md
   content: |
-    Markdown goes here.
+    TODO
