@@ -1,0 +1,63 @@
+### YamlMime:YamlDocument
+documentType: Tutorial
+title: Create a Spring Boot App in Azure
+metadata:
+  title: Create a Spring Boot App in Azure
+  description: Create a Srping Boot backend application with a JavaScript SPA with Azure Storage, Key Vault, and Active Directory.
+  audience: Developer
+  level: Intermediate
+  nextTutorialHref: http://www.bing.com
+  nextTutorialTitle: Set up Jenkins CI/CD to Azure
+  displayType: two-column
+  interactive: azurecli
+items:
+- durationInMinutes: 5
+  content: |
+    This tutorial walks you through developing and deploying a Spring Boot todo list application with an Angular.js front-end.
+    The application stores its data in the [Cosmos DB NoSQL database](), uses [Azure Active Directory]() for enterprise security,
+    and [Azure Key Vault]() for secret management. The tutorial will first deploy the applications to [Azure Web App for Containers](), and then
+    show you the steps for deploying to [Azure Kuberenetes Service]().
+
+    This tutorial uses the [Azure CLI]() to create and configure the Azure resources needed by the application.
+    You can use the second column of this tutorial to run the CLI commands in the browser.
+
+- title: Set up your development environment
+  durationInMinutes: 5
+  content: |
+    Before you begin, you'll need the following installed on your development machine 
+
+    * [JDK](https://www.azul.com/downloads/zulu/) 1.8 and above
+    * [Maven](https://maven.apache.org/) 3.0 and above
+- title: Add A Data Disk
+  durationInMinutes: 3
+  href: ./virtual-machines-linux-tutorial-vm-2-add-disk.md
+  content: |
+    Markdown goes here.
+- title: Install Software
+  durationInMinutes: 4
+  href: ./virtual-machines-linux-tutorial-vm-3-install-app.md
+  content: |
+    Markdown goes here.
+- title: Configure a Firewall
+  durationInMinutes: 2
+  href: ./virtual-machines-linux-tutorial-vm-4-configure-firewall.md
+  content: |
+    Markdown goes here.
+- title: Install Software
+  durationInMinutes: 4
+  href: ./virtual-machines-linux-tutorial-vm-3-install-app.md
+  content: |
+    Markdown goes here.
+- title: Snapshot The Virtual Machine
+  durationInMinutes: 3
+  href: ./virtual-machines-linux-tutorial-vm-5-create-snapshot.md
+  content: |
+    Markdown goes here.
+- title: Perform Common Management Tasks
+  durationInMinutes: 4
+  href: ./virtual-machines-linux-tutorial-vm-6-common-tasks.md
+  content: |
+    Markdown goes here.
+- href: ./next-steps.md
+  content: |
+    Markdown goes here.
