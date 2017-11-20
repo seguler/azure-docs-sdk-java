@@ -19,38 +19,118 @@ items:
     show you the steps for deploying to [Azure Kuberenetes Service]().
 
     This tutorial uses the [Azure CLI]() to create and configure the Azure resources needed by the application.
-    You can use the second column of this tutorial to run the CLI commands in the browser.
+    You can use the second column of this tutorial to run the CLI commands in the browser through the [Azure Cloud Shell]().
 
 - title: Set up your development environment
   durationInMinutes: 5
   content: |
-    Before you begin, you'll need the following installed on your development machine 
+    Before you begin, you'll need the following installed on your development machine:
 
     * [JDK](https://www.azul.com/downloads/zulu/) 1.8 and above
     * [Maven](https://maven.apache.org/) 3.0 and above
-- title: Add A Data Disk
+
+    Clone the [sample repo repository](https://github.com/Microsoft/todo-app-java-on-azure) and open the project folder in your
+    favorite IDE or code editor. During the tutorial you'll be asked to edit the code in your local copy of the 
+    project.
+
+    You'll also need to [create a new Azure resource group]() to manage the resources created in this tutorial.
+
+    ```azurecli-interactive
+    az group create -n mySpringBootResourceGroup -l westus
+    ```
+
+- title: Configure a Cosmos DB instance to store your data
+  durationInMinutes: 5
+  content: |
+    In this step, you'll create an Azure Cosmos DB instance and configure it to use the [Document DB API]() . You'll
+    then configure the Spring Boot project so that it has the Cosmos DB endpoint information and credential keys
+    needed to connect and store data in Azure.
+
+    Create the Cosmos DB instance, noting the `documentEndpoint` field in the response:
+    ```azurecli-interactive
+    az cosmosdb create --kind GlobalDocumentDB -g mySpringBootResourceGroup -n mySpringBootCosmosDB
+    ```
+
+    Retrieve the Cosmos DB access key to allow the sample to authenticate with Azure.
+    ```azurecli-interactive
+    az cosmosdb list-keys -g mySpringBootResourceGroup -n mySpringBootCosmosDB
+    ```
+
+    In your local project, configure your application to connect to Cosmos DB. Open `src/main/resources/application.properties`
+    and add the following properties:
+
+    ```
+    azure.documentdb.uri=put-your-documentdb-uri-here
+    azure.documentdb.key=put-your-documentdb-key-here
+    azure.documentdb.database=put-your-documentdb-databasename-here
+    ```
+
+- title: Run the sample locally 
   durationInMinutes: 3
-  href: ./virtual-machines-linux-tutorial-vm-2-add-disk.md
   content: |
-    Markdown goes here.
-- title: Install Software
-  durationInMinutes: 4
-  href: ./virtual-machines-linux-tutorial-vm-3-install-app.md
-  content: |
-    Markdown goes here.
-- title: Configure a Firewall
+    From your local project directory, build the sample with Maven:
+
+    ```
+    mvn package
+    ```
+
+    Run the project with:
+    ```
+    java -jar target/todo-app-java-on-azure-1.0-SNAPSHOT.jar
+    ```
+
+    Browse to the sample on http://localhost:8080 once the app is started to see the todo list application.
+    Changes made to the todo list will be saved to Cosmos DB.
+
+- title: Deploy the sample on Azure App Service for Containers
   durationInMinutes: 2
-  href: ./virtual-machines-linux-tutorial-vm-4-configure-firewall.md
   content: |
-    Markdown goes here.
-- title: Install Software
+    In this step, you'll build the application as a Docker container, deploy it to Azure Container Registry, then
+    deploy that container image to Azure App Service for Containers.
+
+    Create the Azure Container Registry:
+    ```azurecli-interactive
+    az acr create -n mySpringBootRegistry -g mySpringBootResourceGroup --sku Basic
+    ```
+
+    Retrieve your credentials to the container registry. You'll need them to configure Maven to push the built container image in the next step.
+    ```azurecli-interactive
+    az acr credential show -n mySpringBootRegistry
+    ```
+
+    Configure Maven to deploy to Azure App Service:
+    In the Maven settings file `~/.m2/settings.xml`, add a new <server> element with your Azure Container Registry credentials from previous steps.
+
+    ```XML
+    <server>
+      <id>put-your-docker-registry-url</id>
+      <username>put-your-docker-username</username>
+      <password>put-your-docker-key</password>
+      <configuration>
+        <email>put-your-email</email>
+      </configuration>
+     </server>
+     ```
+
+     Build and push the container image to Azure Container registry:
+
+     ```
+     mvn clean package docker:build docker:push
+     ```
+
+     Deploy the pushed image to Azure App Service for Containers:
+     ```
+     mvn azure-webapp:deploy
+     ```
+
+     Open the application on Azure in your web browser. You'll note that the todo items added earlier when you
+     ran the app locally appear since both application instances use the same Cosmos DB database.
+- title: Secure the sample app with Azure Active Directory
   durationInMinutes: 4
-  href: ./virtual-machines-linux-tutorial-vm-3-install-app.md
   content: |
     Markdown goes here.
-- title: Snapshot The Virtual Machine
+- title: Manage application secrets with Azure Key Vault
   durationInMinutes: 3
-  href: ./virtual-machines-linux-tutorial-vm-5-create-snapshot.md
   content: |
     Markdown goes here.
 - title: Perform Common Management Tasks
