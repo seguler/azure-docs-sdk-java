@@ -126,27 +126,12 @@ items:
     ```
 
     Retrieve the username and  password to your container registry. You'll need them to configure Maven in the next step.
+    
     ```azurecli
     az acr credential show -n my-unique-registry-name
     ```
 
     You'll see two passwords and a username in the output:
-
-    ```json
-    {
-  "passwords": [
-     {
-      "name": "password",
-      "value": "secure-password"
-     },
-     {
-      "name": "password2",
-      "value": "secure-password"
-     }
-     ],
-     "username": "my-unique-registry-name"
-     }
-     ```
 
     Configure Maven to deploy to Azure App Service:
     In the Maven settings file `~/.m2/settings.xml`, add a new <server> element with your Azure Container Registry credentials from previous steps.
