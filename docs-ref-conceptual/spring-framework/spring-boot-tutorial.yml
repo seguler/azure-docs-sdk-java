@@ -21,8 +21,8 @@ items:
     This tutorial uses the [Azure CLI]() to create and configure the Azure resources needed by the application.
     You can use the second column of this tutorial to run the CLI commands in the browser through the [Azure Cloud Shell]().
 
-- title: Set up your development environment
-  durationInMinutes: 5
+- title: Set up your environment
+  durationInMinutes: 3
   content: |
     Before you begin, you'll need the following installed on your development machine:
 
@@ -33,40 +33,59 @@ items:
     favorite IDE or code editor. During the tutorial you'll be asked to edit the code in your local copy of the 
     project.
 
-    You'll also need to [create a new Azure resource group]() to manage the resources created in this tutorial.
+    [Create a new Azure resource group]() to manage the resources created in this tutorial.
 
-    ```azurecli-interactive
+    ```azurecli
     az group create -n mySpringBootResourceGroup -l westus
     ```
 
-- title: Configure a Cosmos DB instance to store your data
+- title: Store your data with Cosmos DB
   durationInMinutes: 5
   content: |
-    In this step, you'll create an Azure Cosmos DB instance and configure it to use the [Document DB API]() . You'll
-    then configure the Spring Boot project so that it has the Cosmos DB endpoint information and credential keys
-    needed to connect and store data in Azure.
+    In this step, you'll create an [Azure Cosmos DB]() instance and configure it to use the [Document DB API]() . You'll
+    then configure the Spring Boot project with connection information and credentials to use the database.
 
     Create the Cosmos DB instance, noting the `documentEndpoint` field in the response:
-    ```azurecli-interactive
-    az cosmosdb create --kind GlobalDocumentDB -g mySpringBootResourceGroup -n mySpringBootCosmosDB
+    ```azurecli
+    az cosmosdb create --kind GlobalDocumentDB -g mySpringBootResourceGroup -n your-unique-db-name
     ```
 
-    Retrieve the Cosmos DB access key to allow the sample to authenticate with Azure.
-    ```azurecli-interactive
-    az cosmosdb list-keys -g mySpringBootResourceGroup -n todoappdb
+    When the database is ready to use, you'll see confirmation in the output that the provisioning of the database was successful along with the HTTPS endpoint you'll 
+    configure the sample app to use.
+
+    ```json
+    "kind": "GlobalDocumentDB",
+    "location": "West US",
+    "name": "your-unique-db-name",
+    "provisioningState": "Succeeded",
+    "readLocations": [
+       {
+         "documentEndpoint": "https://your-unique-db-name-westus.documents.azure.com:443/",
+         "failoverPriority": 0,
+         "id": "your-unique-db-name-westus",
+         "locationName": "West US",
+         "provisioningState": "Succeeded"
+       }
+    ],
+    ```
+
+
+    Retrieve the primary master Cosmos DB access key to allow the sample to read and write to the database.
+    ```azurecli
+    az cosmosdb list-keys -g mySpringBootResourceGroup -n your-unique-db-name
     ```
 
     In your local project, configure your application to connect to Cosmos DB. Open `src/main/resources/application.properties`
     and add the following properties:
 
     ```
-    azure.documentdb.uri=put-your-documentdb-uri-here
-    azure.documentdb.key=put-your-documentdb-key-here
-    azure.documentdb.database=put-your-documentdb-databasename-here
+    azure.documentdb.uri=https://your-unique-db-name.documents.azure.com:443/
+    azure.documentdb.key=put-your-primary-master-key-here
+    azure.documentdb.database=your-unique-db-name
     ```
 
 - title: Run the sample locally 
-  durationInMinutes: 3
+  durationInMinutes: 4
   content: |
     From your local project directory, build the sample with Maven:
 
@@ -79,40 +98,74 @@ items:
     java -jar target/todo-app-java-on-azure-1.0-SNAPSHOT.jar
     ```
 
-    Browse to the sample on http://localhost:8080 once the app is started to see the todo list application.
-    Changes made to the todo list will be saved to Cosmos DB.
+    Browse to the sample on http://localhost:8080 once the app is started to use the sample application.
+    
+    ![Sample app running locally](media/spring-boot-tutorial/todo-list-app.png)
 
-- title: Deploy the sample on Azure App Service for Containers
-  durationInMinutes: 2
+    Changes made to the todo list will be saved to your Cosmos DB instance.
+
+- title: Deploy to Azure App Service
+  durationInMinutes: 10
   content: |
-    In this step, you'll build the application as a Docker container, deploy it to Azure Container Registry, then
-    deploy that container image to Azure App Service for Containers.
+    In this step, you'll package the sample as a  Docker container, push the image to Azure Container Registry, and then 
+    deploy the image Azure App Service for Containers.
 
     Create the Azure Container Registry:
-    ```azurecli-interactive
-    az acr create -n mySpringBootRegistry -g mySpringBootResourceGroup --sku Basic
+    ```azurecli
+    az acr create -n my-unique-registry-name -g mySpringBootResourceGroup --sku Basic --admin-enabled
+    ```
+    A new Azure storage account will be created in the resource group to manage storage for your container images. When the registry is ready, you see the provisioning state 
+    as `Succeeded` in the CLI output
+
+    ```json
+    "location": "westus",
+    "loginServer": "my-unique-registry-name.azurecr.io",
+    "name": "my-unique-registry-name",
+    "provisioningState": "Succeeded",
+    "resourceGroup": "mySpringBootResourceGroup",
     ```
 
-    Retrieve your credentials to the container registry. You'll need them to configure Maven to push the built container image in the next step.
-    ```azurecli-interactive
-    az acr credential show -n mySpringBootRegistry
+    Retrieve the username and  password to your container registry. You'll need them to configure Maven in the next step.
+    ```azurecli
+    az acr credential show -n my-unique-registry-name
     ```
+
+    You'll see two passwords and a username in the output:
+    ```
+    {
+  "passwords": [
+     {
+      "name": "password",
+      "value": "secure-password"
+     },
+     {
+      "name": "password2",
+      "value": "secure-password"
+     }
+     ],
+     "username": "my-unique-registry-name"
+     }
+     ```
 
     Configure Maven to deploy to Azure App Service:
     In the Maven settings file `~/.m2/settings.xml`, add a new <server> element with your Azure Container Registry credentials from previous steps.
 
     ```XML
     <server>
-      <id>put-your-docker-registry-url</id>
-      <username>put-your-docker-username</username>
-      <password>put-your-docker-key</password>
+      <id>my-unique-registry-name.azurecr.io</id>
+      <username>my-unique-registry-name</username>
+      <password>secure-password</password>
       <configuration>
-        <email>put-your-email</email>
+        <email>frank@fabrikam.com</email>
       </configuration>
      </server>
      ```
 
-     Build and push the container image to Azure Container registry:
+     Open the project's `pom.xml` and replace the value for `docker.image.prefix` with your Azure Container Registry URL:
+
+     ```<docker.image.prefix>https://my-unique-registry-name.azurecr.io</docker.image.prefix>```
+
+     Build and push the container image to the registry:
 
      ```
      mvn clean package docker:build docker:push
@@ -123,9 +176,10 @@ items:
      mvn azure-webapp:deploy
      ```
 
-     Open the application on Azure in your web browser. You'll note that the todo items added earlier when you
+     Open the application once it's finished deploying in your web browser. You'll note that the todo list items added when you
      ran the app locally appear since both application instances use the same Cosmos DB database.
-- title: Secure the sample app with Azure Active Directory
+
+- title: Secure the sample app
   durationInMinutes: 4
   content: |
     The sample you've deployed is currently accessible to the entire internet. In this step, you'll restrict
@@ -135,11 +189,11 @@ items:
     > This step requires you have the ability to create App registrations in your Azure AD tenant.
 
         
-- title: Manage application secrets with Azure Key Vault
+- title: Manage secrets Azure Key Vault
   durationInMinutes: 3
   content: |
     Markdown goes here.
-- title: Perform Common Management Tasks
+- title: Deploy to Kubernetes
   durationInMinutes: 4
   href: ./virtual-machines-linux-tutorial-vm-6-common-tasks.md
   content: |
