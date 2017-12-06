@@ -2,6 +2,7 @@
   href: ./index.yml
   items:
   - name: Getting Started Guides
+    expanded: true
     items:
       - name: Spring Initializr
         href: spring-boot-starters-for-azure.md
