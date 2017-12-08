@@ -37,18 +37,18 @@ items:
 
     [Create a new Azure resource group](/cli/azure/group?view=azure-cli-latest#az_group_create) to manage the resources created in this tutorial.
 
-    ```azurecli
+    ```azurecli-interactive
     az group create -n mySpringBootResourceGroup -l westus2
     ```
 - title: Store your data with Cosmos DB
   durationInMinutes: 5
   content: |
-    In this step, you'll create an [Azure Cosmos DB]() instance and configure it to use the [Document DB API]() . You'll
+    In this step, you'll create an Azure Cosmos DB database and access it using the [Document DB API](/azure/cosmos-db/documentdb-introduction) . You'll
     then configure the Spring Boot project with connection information and credentials to use the database.
 
     Create the Cosmos DB instance, noting the `documentEndpoint` field in the response:
 
-    ```azurecli
+    ```azurecli-interactive
     az cosmosdb create --kind GlobalDocumentDB -g mySpringBootResourceGroup -n your-unique-db-name
     ```
 
@@ -72,7 +72,7 @@ items:
     ```
 
     Retrieve the primary master Cosmos DB access key to allow the sample to read and write to the database.
-    ```azurecli
+    ```azurecli-interactive
     az cosmosdb list-keys -g mySpringBootResourceGroup -n your-unique-db-name
     ```
 
@@ -111,7 +111,7 @@ items:
 
     Create the Azure Container Registry:  
 
-    ```azurecli
+    ```azurecli-interactive
     az acr create -n my-unique-registry-name -g mySpringBootResourceGroup --sku Basic --admin-enabled
     ```
     A new Azure storage account will be created in the resource group to manage storage for your container images. When the registry is ready, you see the provisioning state 
@@ -127,7 +127,7 @@ items:
 
     Retrieve the username and  password to your container registry. You'll need them to configure Maven in the next step.
 
-    ```azurecli
+    ```azurecli-interactive
     az acr credential show -n my-unique-registry-name
     ```
 
@@ -172,17 +172,17 @@ items:
  
     Create a Kuberenetes cluster with one node using the Azure CLI.
 
-    ```
+    ```azurecli-interactive
     az aks create --resource-group myResourceGroup --name myTodoCluster --node-count 1 --generate-ssh-keys
     ```
   
     Install the kubectl command-line client using the Azure CLI. If you're using the Cloud Shell, it's already installed and you can skip this step.
-    ```
+    ```azurecli-interactive
     az aks install-cli
     ```
 
     Download the credentials and configure kubectl to connect to your new cluster.
-    ```
+    ```azurecli-interactive
     az aks get-credentials --resource-group myResourceGroup --name myTodoCluster
     ```
 
