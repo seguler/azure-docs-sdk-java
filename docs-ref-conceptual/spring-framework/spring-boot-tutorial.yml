@@ -3,24 +3,21 @@ documentType: Tutorial
 title: Create a Spring Boot App in Azure
 metadata:
   title: Create a Spring Boot App in Azure
-  description: Create a Srping Boot backend application with a JavaScript SPA with Azure Storage, Key Vault, and Active Directory.
+  description: Create and deploy a Todo Spring Boot app to Azure using Cosmos DB, containers and Kubernetes.
   audience: Developer
   level: Intermediate
-  nextTutorialHref: http://www.bing.com
+  nextTutorialHref: https://docs.microsoft.com/azure/jenkins/java-deploy-webapp-tutorial
   nextTutorialTitle: Set up Jenkins CI/CD to Azure
-  displayType: two-column
-  interactive: azurecli
+  displayType: one-column
 items:
 - durationInMinutes: 5
   content: |
     This tutorial walks you through developing and deploying a Spring Boot todo list application with an Angular.js front-end.
-    The application stores its data in the [Cosmos DB NoSQL database](), uses [Azure Active Directory]() for enterprise security,
-    and [Azure Key Vault]() for secret management. The tutorial will first deploy the applications to [Azure Web App for Containers](), and then
-    show you the steps for deploying to [Azure Kuberenetes Service]().
+    The application stores its data in the [Cosmos DB document database](/azure/cosmos-db/create-documentdb-java). 
+    The tutorial first deploys the application to [Azure Web App for Containers](/azure/app-service/app-service-web-get-started-java), and then  to [Azure Kuberenetes Service](/java/azure/spring-framework/deploy-spring-boot-java-app-on-kubernetes).
 
-    This tutorial uses the [Azure CLI]() to create and configure the Azure resources needed by the application.
-    You can use the second column of this tutorial to run the CLI commands in the browser through the [Azure Cloud Shell]().
-
+    This tutorial uses the [Azure CLI](/cli/azure/overview) to create and configure the Azure resources needed by the application.
+    You can run the CLI commands in the browser through the [Azure Cloud Shell](/azure/cloud-shell/overview).
 - title: Set up your environment
   durationInMinutes: 3
   content: |
@@ -29,16 +26,20 @@ items:
     * [JDK](https://www.azul.com/downloads/zulu/) 1.8 and above
     * [Maven](https://maven.apache.org/) 3.0 and above
 
-    Clone the [sample repo repository](https://github.com/Microsoft/todo-app-java-on-azure) and open the project folder in your
-    favorite IDE or code editor. During the tutorial you'll be asked to edit the code in your local copy of the 
-    project.
+    Clone the [sample repo repository](https://github.com/Microsoft/todo-app-java-on-azure) 
 
-    [Create a new Azure resource group]() to manage the resources created in this tutorial.
-
-    ```azurecli
-    az group create -n mySpringBootResourceGroup -l westus
+    ```
+    git clone https://github.com/Microsoft/todo-app-java-on-azure
     ```
 
+    During the tutorial you'll be asked to edit the code in your local copy of the 
+    project, so go ahead and open the project folder in your favorite IDE or code editor.
+
+    [Create a new Azure resource group](/cli/azure/group?view=azure-cli-latest#az_group_create) to manage the resources created in this tutorial.
+
+    ```azurecli
+    az group create -n mySpringBootResourceGroup -l westus2
+    ```
 - title: Store your data with Cosmos DB
   durationInMinutes: 5
   content: |
@@ -46,6 +47,7 @@ items:
     then configure the Spring Boot project with connection information and credentials to use the database.
 
     Create the Cosmos DB instance, noting the `documentEndpoint` field in the response:
+
     ```azurecli
     az cosmosdb create --kind GlobalDocumentDB -g mySpringBootResourceGroup -n your-unique-db-name
     ```
@@ -55,7 +57,7 @@ items:
 
     ```json
     "kind": "GlobalDocumentDB",
-    "location": "West US",
+    "location": "West US 2",
     "name": "your-unique-db-name",
     "provisioningState": "Succeeded",
     "readLocations": [
@@ -63,27 +65,24 @@ items:
          "documentEndpoint": "https://your-unique-db-name-westus.documents.azure.com:443/",
          "failoverPriority": 0,
          "id": "your-unique-db-name-westus",
-         "locationName": "West US",
+         "locationName": "West US 2",
          "provisioningState": "Succeeded"
        }
     ],
     ```
-
 
     Retrieve the primary master Cosmos DB access key to allow the sample to read and write to the database.
     ```azurecli
     az cosmosdb list-keys -g mySpringBootResourceGroup -n your-unique-db-name
     ```
 
-    In your local project, configure your application to connect to Cosmos DB. Open `src/main/resources/application.properties`
-    and add the following properties:
+    Configure your application to connect to Cosmos DB. Open `src/main/resources/application.properties` and add the following properties:
 
     ```
     azure.documentdb.uri=https://your-unique-db-name.documents.azure.com:443/
     azure.documentdb.key=put-your-primary-master-key-here
     azure.documentdb.database=your-unique-db-name
     ```
-
 - title: Run the sample locally 
   durationInMinutes: 4
   content: |
@@ -102,13 +101,13 @@ items:
     
     ![Sample app running locally](media/spring-boot-tutorial/todo-list-app.png)
 
-    Changes made to the todo list will be saved to your Cosmos DB instance.
+    Add a couple of todo entries using the running app in your browser. These entries will be stored in Cosmos DB in the cloud.
 
 - title: Deploy to Azure App Service
   durationInMinutes: 10
   content: |
-    In this step, you'll package the sample as a  Docker container, push the image to Azure Container Registry, and then 
-    deploy the image Azure App Service for Containers.
+    In this step, you'll package the sample as a Docker container, push the image to Azure Container Registry, and then 
+    deploy the image on Azure App Service for Containers.
 
     Create the Azure Container Registry:  
 
@@ -164,7 +163,31 @@ items:
      ```
 
      Open the application once it's finished deploying in your web browser. You'll note that the todo list items added when you
-     ran the app locally appear since both application instances use the same Cosmos DB database.
+     ran the app locally show up since the app is using the same Cosmos DB database.
+- title: Deploy to Kubernetes
+  durationInMinutes: 4
+  content: |
+    In the previous step you deployed the application to Azure Web App for Containers. In this step you'll deploy the application to Azure Kubernetes Service and manage your deployment using
+    kubectl and the Kubernetes web interface.
+ 
+    Create a Kuberenetes cluster with one node using the Azure CLI.
+
+    ```
+    az aks create --resource-group myResourceGroup --name myTodoCluster --node-count 1 --generate-ssh-keys
+    ```
+  
+    Install the kubectl command-line client using the Azure CLI. If you're using the Cloud Shell, it's already installed and you can skip this step.
+    ```
+    az aks install-cli
+    ```
+
+    Download the credentials and configure kubectl to connect to your new cluster.
+    ```
+    az aks get-credentials --resource-group myResourceGroup --name myTodoCluster
+    ```
+
+    Create a new file `spring-boot-todo.yml` to define which container images should run in the clsuter.
+
 - href: Next Steps
   content: |
     TODO
