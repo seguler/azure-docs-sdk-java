@@ -173,7 +173,7 @@ items:
     Create a Kuberenetes cluster with one node using the Azure CLI.
 
     ```azurecli-interactive
-    az aks create --resource-group myResourceGroup --name myTodoCluster --node-count 1 --generate-ssh-keys
+    az aks create --resource-group mySpringBootResourceGroup --name myTodoCluster --node-count 1 --generate-ssh-keys
     ```
   
     Install the kubectl command-line client using the Azure CLI. If you're using the Cloud Shell, it's already installed and you can skip this step.
@@ -183,11 +183,30 @@ items:
 
     Download the credentials and configure kubectl to connect to your new cluster.
     ```azurecli-interactive
-    az aks get-credentials --resource-group myResourceGroup --name myTodoCluster
+    az aks get-credentials --resource-group mySpringBootResourceGroup --name myTodoCluster
     ```
 
-    Create a new file `spring-boot-todo.yml` to define which container images should run in the clsuter.
+    Copy the Kubernetes resource yaml file fragments for use by the project's Fabric8 Maven plugin configuration. 
+
+    ```bash
+    mkdir src/main/fabric8
+    cp doc/resources/fabric8/*.yml src/main/fabric8
+    ```
+
+    Now deploy the image to AKS
+    ```
+    mvn fabric8:resource fabric8:apply
+    ```
+
+    Get the external IP address from kubectl. This may take a few minutes to wait the deploy success. Before finishing, the `external-ip` field should show `pending`.
+
+    ```bash
+    kubectl get svc -w
+    ```
+
+   Open the url you obtained in last step in your browser, you will find the todo app has been deployed to your Kubernetes cluster. 
+
 
 - href: Next Steps
   content: |
-    TODO
+    Learn more about developing Spring apps on Azure at [Spring on Azure](https://docs.microsoft/com/java/azure/spring-framework).
