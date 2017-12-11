@@ -102,7 +102,6 @@ items:
     ![Sample app running locally](media/spring-boot-tutorial/todo-list-app.png)
 
     Add a couple of todo entries using the running app in your browser. These entries will be stored in Cosmos DB in the cloud.
-
 - title: Deploy to Azure App Service
   durationInMinutes: 10
   content: |
@@ -144,12 +143,14 @@ items:
       <configuration>
         <email>frank@fabrikam.com</email>
       </configuration>
-     </server>
-     ```
+    </server>
+    ```
 
-     Open the project's `pom.xml` and replace the value for `docker.image.prefix` with your Azure Container Registry URL:
+    Open the project's `pom.xml` and replace the value for `docker.image.prefix` with your Azure Container Registry URL:
 
-     ```<docker.image.prefix>https://my-unique-registry-name.azurecr.io</docker.image.prefix>```
+    ```
+    <docker.image.prefix>https://my-unique-registry-name.azurecr.io</docker.image.prefix>
+    ```
 
      Build and push the container image to the registry:
 
@@ -203,10 +204,8 @@ items:
     ```bash
     kubectl get svc -w
     ```
-
-   Open the url you obtained in last step in your browser, you will find the todo app has been deployed to your Kubernetes cluster. 
-
-
-- href: Next Steps
+    
+    Open the url you obtained in last step in your browser, you will find the todo app has been deployed to your Kubernetes cluster. 
+- title: Deploy to Kubernetes
   content: |
     Learn more about developing Spring apps on Azure at [Spring on Azure](https://docs.microsoft/com/java/azure/spring-framework).
