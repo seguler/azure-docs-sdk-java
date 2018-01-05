@@ -95,6 +95,10 @@ catch (SQLException e) {
 > [!div class="nextstepaction"]
 > [Find more sample code](https://azure.microsoft.com/resources/samples/?platform=java&term=mysql)
 
+## Spring integration
+
+Get started using Azure Database for MySQL with [Spring Data JPA](http://projects.spring.io/spring-data-jpa/) with the [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/) guide.
+
 ## Next steps
 
 [Build a Java and MySQL web app](/azure/app-service-web/app-service-web-tutorial-java-mysql)   
