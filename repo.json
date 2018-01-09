@@ -63,6 +63,11 @@
 		"url": "https://github.com/AzureAD/azure-activedirectory-library-for-java",
 		"branch": "master",
 		"name": "azure-ad-client"
+	},
+	{
+		"url": "https://github.com/Azure/azure-libraries-for-java",
+		"branch": "master",
+		"name": "azure-container-registry"
 	}
 
 
