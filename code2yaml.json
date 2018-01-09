@@ -14,7 +14,7 @@
 		"src/azure-keyvault",
 		"src/azure-servicebus",
 		"src/azure-ad-client/src/main/java/com/microsoft/aad/adal4j",
-		"src/elastic-db-tools-for-java,
+		"src/elastic-db-tools-for-java",
 		"src/azure-container-registry/azure-mgmt-containerregistry/"
 	],
 	"exclude_paths":
