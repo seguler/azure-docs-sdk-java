@@ -15,7 +15,7 @@
 		"src/azure-servicebus",
 		"src/azure-ad-client/src/main/java/com/microsoft/aad/adal4j",
 		"src/elastic-db-tools-for-java"
-		"src/azure-container-registry/src/main/java/com/microsoft/azure/management/containerregistry/"
+		"src/azure-container-registry/azure-mgmt-containerregistry/src/main/java/com/microsoft/azure/management/containerregistry/"
 	],
 	"exclude_paths":
 	[
