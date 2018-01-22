@@ -14,7 +14,6 @@ items:
   - com.microsoft.azure.keyvault.cryptography._rsa_key.getKid()
   - com.microsoft.azure.keyvault.cryptography._rsa_key.KeySize1024
   - com.microsoft.azure.keyvault.cryptography._rsa_key.KeySize2048
-  - com.microsoft.azure.keyvault.cryptography._rsa_key.KeySize4096
   - com.microsoft.azure.keyvault.cryptography._rsa_key.RsaKey(String)
   - com.microsoft.azure.keyvault.cryptography._rsa_key.RsaKey(String,int)
   - com.microsoft.azure.keyvault.cryptography._rsa_key.RsaKey(String,int,Provider)
@@ -34,7 +33,7 @@ items:
   source:
     remote: &o0
       path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-      branch: v1.0.0
+      branch: bb950b2a0255c017040501de0c19e4849361ca1d
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
     startLine: 25
@@ -59,7 +58,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 293
+    startLine: 292
   package: com.microsoft.azure.keyvault.cryptography
   syntax:
     content: public void close()
@@ -77,7 +76,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 106
+    startLine: 105
   package: com.microsoft.azure.keyvault.cryptography
   summary: >-
     <p>Decrypts the specified cipher text. Note that not all algorithms require, or support, all parameters.</p>
@@ -122,7 +121,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 139
+    startLine: 138
   package: com.microsoft.azure.keyvault.cryptography
   summary: >-
     <p>Encrypts the specified plain text. Note that not all algorithms require, or support, all parameters.</p>
@@ -164,7 +163,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 86
+    startLine: 85
   package: com.microsoft.azure.keyvault.cryptography
   summary: >-
     <p>The default encryption algorithm for this key, using the representations from Json Web Key Algorithms, RFC7513.</p>
@@ -190,7 +189,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 31
+    startLine: 30
   package: com.microsoft.azure.keyvault.cryptography
   syntax:
     content: public static int getDefaultKeySize()
@@ -210,7 +209,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 91
+    startLine: 90
   package: com.microsoft.azure.keyvault.cryptography
   summary: >-
     <p>The default key wrap algorithm for this key, using the representations from Json Web Key Algorithms, RFC7513.</p>
@@ -236,7 +235,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 96
+    startLine: 95
   package: com.microsoft.azure.keyvault.cryptography
   summary: >-
     <p>The default signature algorithm for this key, using the representations from Json Web Key Algorithms, RFC7513.</p>
@@ -262,7 +261,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 101
+    startLine: 100
   package: com.microsoft.azure.keyvault.cryptography
   summary: >-
     <p>The unique key identifier for this key.</p>
@@ -312,25 +311,6 @@ items:
     content: public static int KeySize2048= 2048
     return:
       type: f75371fa
-- uid: com.microsoft.azure.keyvault.cryptography._rsa_key.KeySize4096
-  id: KeySize4096
-  parent: com.microsoft.azure.keyvault.cryptography._rsa_key
-  href: com.microsoft.azure.keyvault.cryptography._rsa_key.yml
-  langs:
-  - java
-  name: KeySize4096
-  nameWithType: RsaKey.KeySize4096
-  fullName: int com.microsoft.azure.keyvault.cryptography.RsaKey.KeySize4096
-  type: Field
-  source:
-    remote: *o0
-    path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 29
-  package: com.microsoft.azure.keyvault.cryptography
-  syntax:
-    content: public static int KeySize4096= 4096
-    return:
-      type: f75371fa
 - uid: com.microsoft.azure.keyvault.cryptography._rsa_key.RsaKey(String)
   id: RsaKey(String)
   parent: com.microsoft.azure.keyvault.cryptography._rsa_key
@@ -345,7 +325,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 39
+    startLine: 38
   package: com.microsoft.azure.keyvault.cryptography
   syntax:
     content: public RsaKey(String kid)
@@ -366,7 +346,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 43
+    startLine: 42
   package: com.microsoft.azure.keyvault.cryptography
   syntax:
     content: public RsaKey(String kid, int keySize)
@@ -389,7 +369,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 47
+    startLine: 46
   package: com.microsoft.azure.keyvault.cryptography
   syntax:
     content: public RsaKey(String kid, int keySize, Provider provider)
@@ -414,7 +394,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 62
+    startLine: 61
   package: com.microsoft.azure.keyvault.cryptography
   syntax:
     content: public RsaKey(String kid, KeyPair keyPair)
@@ -437,7 +417,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 66
+    startLine: 65
   package: com.microsoft.azure.keyvault.cryptography
   syntax:
     content: public RsaKey(String kid, KeyPair keyPair, Provider provider)
@@ -462,7 +442,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 233
+    startLine: 232
   package: com.microsoft.azure.keyvault.cryptography
   summary: >-
     <p>Signs the specified digest using the specified algorithm, or the keys DefaultSignatureAlgorithm if no algorithm is specified.</p>
@@ -498,7 +478,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 199
+    startLine: 198
   package: com.microsoft.azure.keyvault.cryptography
   summary: >-
     <p>Unwraps (decrypts) the specified encryped key material.</p>
@@ -534,7 +514,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 263
+    startLine: 262
   package: com.microsoft.azure.keyvault.cryptography
   summary: >-
     <p>Verifies the supplied signature value using the supplied digest and algorithm.</p>
@@ -573,7 +553,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/RsaKey.java
-    startLine: 169
+    startLine: 168
   package: com.microsoft.azure.keyvault.cryptography
   summary: >-
     <p>Wraps (encrypts) the specified symmetric key material using the specified algorithm, or the keys DefaultKeyWrapAlgorithm if none is specified.</p>

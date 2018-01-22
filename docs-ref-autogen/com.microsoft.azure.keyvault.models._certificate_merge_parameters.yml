@@ -20,10 +20,10 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateMergeParameters.java
-      branch: v1.0.0
+      branch: bb950b2a0255c017040501de0c19e4849361ca1d
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateMergeParameters.java
-    startLine: 15
+    startLine: 19
   package: com.microsoft.azure.keyvault.models
   summary: <p>The certificate merge parameters. </p>
   syntax: &o1
@@ -44,7 +44,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateMergeParameters.java
-    startLine: 59
+    startLine: 63
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the certificateAttributes value.</p>
@@ -69,7 +69,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateMergeParameters.java
-    startLine: 79
+    startLine: 83
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the tags value.</p>
@@ -94,7 +94,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateMergeParameters.java
-    startLine: 69
+    startLine: 73
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the certificateAttributes value.</p>
@@ -123,7 +123,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateMergeParameters.java
-    startLine: 89
+    startLine: 93
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the tags value.</p>
@@ -152,7 +152,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateMergeParameters.java
-    startLine: 49
+    startLine: 53
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the x509Certificates value.</p>
@@ -181,7 +181,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateMergeParameters.java
-    startLine: 39
+    startLine: 43
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the x509Certificates value.</p>

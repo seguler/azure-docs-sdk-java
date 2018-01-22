@@ -5,6 +5,7 @@ items:
   parent: com.microsoft.azure.keyvault.models
   children:
   - com.microsoft.azure.keyvault.models._key_item.attributes()
+  - com.microsoft.azure.keyvault.models._key_item.identifier()
   - com.microsoft.azure.keyvault.models._key_item.kid()
   - com.microsoft.azure.keyvault.models._key_item.managed()
   - com.microsoft.azure.keyvault.models._key_item.tags()
@@ -21,10 +22,10 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
-      branch: v1.0.0
+      branch: bb950b2a0255c017040501de0c19e4849361ca1d
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
-    startLine: 14
+    startLine: 19
   package: com.microsoft.azure.keyvault.models
   summary: <p>The key item containing key metadata. </p>
   syntax: &o1
@@ -45,7 +46,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
-    startLine: 65
+    startLine: 70
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the attributes value.</p>
@@ -56,6 +57,28 @@ items:
     return:
       type: com.microsoft.azure.keyvault.models._key_attributes
       description: <p>the attributes value </p>
+- uid: com.microsoft.azure.keyvault.models._key_item.identifier()
+  id: identifier()
+  parent: com.microsoft.azure.keyvault.models._key_item
+  href: com.microsoft.azure.keyvault.models._key_item.yml
+  langs:
+  - java
+  name: identifier()
+  nameWithType: KeyItem.identifier()
+  fullName: KeyIdentifier com.microsoft.azure.keyvault.models.KeyItem.identifier()
+  overload: com.microsoft.azure.keyvault.models._key_item.identifier*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
+    startLine: 118
+  package: com.microsoft.azure.keyvault.models
+  summary: <p>The key identifier. </p>
+  syntax:
+    content: public KeyIdentifier identifier()
+    return:
+      type: com.microsoft.azure.keyvault._key_identifier
+      description: <p>The Identifier value </p>
 - uid: com.microsoft.azure.keyvault.models._key_item.kid()
   id: kid()
   parent: com.microsoft.azure.keyvault.models._key_item
@@ -70,7 +93,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
-    startLine: 45
+    startLine: 50
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the kid value.</p>
@@ -95,7 +118,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
-    startLine: 105
+    startLine: 110
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the managed value.</p>
@@ -120,7 +143,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
-    startLine: 85
+    startLine: 90
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the tags value.</p>
@@ -145,7 +168,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
-    startLine: 75
+    startLine: 80
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the attributes value.</p>
@@ -174,7 +197,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
-    startLine: 55
+    startLine: 60
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the kid value.</p>
@@ -203,7 +226,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
-    startLine: 95
+    startLine: 100
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the tags value.</p>
@@ -266,16 +289,11 @@ references:
   nameWithType: KeyItem.managed
   fullName: Boolean com.microsoft.azure.keyvault.models.KeyItem.managed
   package: com.microsoft.azure.keyvault.models
-- uid: com.microsoft.azure.keyvault.models._deleted_key_item
-  parent: com.microsoft.azure.keyvault.models
-  href: com.microsoft.azure.keyvault.models._deleted_key_item.yml
-  name: DeletedKeyItem
-  nameWithType: DeletedKeyItem
-  fullName: com.microsoft.azure.keyvault.models.DeletedKeyItem
-  type: Class
-  summary: <p>The deleted key item containing the deleted key metadata and information about deletion. </p>
-  syntax:
-    content: public class DeletedKeyItem extends KeyItem
+- uid: com.microsoft.azure.keyvault.models._key_item.identifier*
+  name: identifier
+  nameWithType: KeyItem.identifier
+  fullName: KeyIdentifier com.microsoft.azure.keyvault.models.KeyItem.identifier
+  package: com.microsoft.azure.keyvault.models
 - uid: com.microsoft.azure.keyvault.models._key_attributes
   parent: com.microsoft.azure.keyvault.models
   href: com.microsoft.azure.keyvault.models._key_attributes.yml
@@ -295,3 +313,13 @@ references:
   type: Class
   summary: <p>The key item containing key metadata. </p>
   syntax: *o1
+- uid: com.microsoft.azure.keyvault._key_identifier
+  parent: com.microsoft.azure.keyvault
+  href: com.microsoft.azure.keyvault._key_identifier.yml
+  name: KeyIdentifier
+  nameWithType: KeyIdentifier
+  fullName: com.microsoft.azure.keyvault.KeyIdentifier
+  type: Class
+  summary: <p>The Key Vault key identifier. </p>
+  syntax:
+    content: public class KeyIdentifier extends ObjectIdentifier

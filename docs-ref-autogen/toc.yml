@@ -2352,12 +2352,6 @@
   - uid: com.microsoft.azure.keyvault._key_vault_client
     name: KeyVaultClient
     href: com.microsoft.azure.keyvault._key_vault_client.yml
-  - uid: com.microsoft.azure.keyvault._key_vault_client_base
-    name: KeyVaultClientBase
-    href: com.microsoft.azure.keyvault._key_vault_client_base.yml
-  - uid: com.microsoft.azure.keyvault._key_vault_client_custom
-    name: KeyVaultClientCustom
-    href: com.microsoft.azure.keyvault._key_vault_client_custom.yml
   - uid: com.microsoft.azure.keyvault._object_identifier
     name: ObjectIdentifier
     href: com.microsoft.azure.keyvault._object_identifier.yml
@@ -2504,16 +2498,6 @@
   - uid: com.microsoft.azure.keyvault.extensions._strings
     name: Strings
     href: com.microsoft.azure.keyvault.extensions._strings.yml
-- uid: com.microsoft.azure.keyvault.implementation
-  name: com.microsoft.azure.keyvault.implementation
-  href: com.microsoft.azure.keyvault.implementation.yml
-  items:
-  - uid: com.microsoft.azure.keyvault.implementation._key_vault_client_base_impl
-    name: KeyVaultClientBaseImpl
-    href: com.microsoft.azure.keyvault.implementation._key_vault_client_base_impl.yml
-  - uid: com.microsoft.azure.keyvault.implementation._key_vault_client_custom_impl
-    name: KeyVaultClientCustomImpl
-    href: com.microsoft.azure.keyvault.implementation._key_vault_client_custom_impl.yml
 - uid: com.microsoft.azure.keyvault.models
   name: com.microsoft.azure.keyvault.models
   href: com.microsoft.azure.keyvault.models.yml
@@ -2533,9 +2517,6 @@
   - uid: com.microsoft.azure.keyvault.models._backup_key_result
     name: BackupKeyResult
     href: com.microsoft.azure.keyvault.models._backup_key_result.yml
-  - uid: com.microsoft.azure.keyvault.models._backup_secret_result
-    name: BackupSecretResult
-    href: com.microsoft.azure.keyvault.models._backup_secret_result.yml
   - uid: com.microsoft.azure.keyvault.models._certificate_attributes
     name: CertificateAttributes
     href: com.microsoft.azure.keyvault.models._certificate_attributes.yml
@@ -2581,27 +2562,6 @@
   - uid: com.microsoft.azure.keyvault.models._contacts
     name: Contacts
     href: com.microsoft.azure.keyvault.models._contacts.yml
-  - uid: com.microsoft.azure.keyvault.models._deleted_certificate_bundle
-    name: DeletedCertificateBundle
-    href: com.microsoft.azure.keyvault.models._deleted_certificate_bundle.yml
-  - uid: com.microsoft.azure.keyvault.models._deleted_certificate_item
-    name: DeletedCertificateItem
-    href: com.microsoft.azure.keyvault.models._deleted_certificate_item.yml
-  - uid: com.microsoft.azure.keyvault.models._deleted_key_bundle
-    name: DeletedKeyBundle
-    href: com.microsoft.azure.keyvault.models._deleted_key_bundle.yml
-  - uid: com.microsoft.azure.keyvault.models._deleted_key_item
-    name: DeletedKeyItem
-    href: com.microsoft.azure.keyvault.models._deleted_key_item.yml
-  - uid: com.microsoft.azure.keyvault.models._deleted_secret_bundle
-    name: DeletedSecretBundle
-    href: com.microsoft.azure.keyvault.models._deleted_secret_bundle.yml
-  - uid: com.microsoft.azure.keyvault.models._deleted_secret_item
-    name: DeletedSecretItem
-    href: com.microsoft.azure.keyvault.models._deleted_secret_item.yml
-  - uid: com.microsoft.azure.keyvault.models._deletion_recovery_level
-    name: DeletionRecoveryLevel
-    href: com.microsoft.azure.keyvault.models._deletion_recovery_level.yml
   - uid: com.microsoft.azure.keyvault.models._error
     name: Error
     href: com.microsoft.azure.keyvault.models._error.yml
@@ -2617,9 +2577,6 @@
   - uid: com.microsoft.azure.keyvault.models._issuer_parameters
     name: IssuerParameters
     href: com.microsoft.azure.keyvault.models._issuer_parameters.yml
-  - uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name
-    name: JsonWebKeyCurveName
-    href: com.microsoft.azure.keyvault.models._json_web_key_curve_name.yml
   - uid: com.microsoft.azure.keyvault.models._key_attributes
     name: KeyAttributes
     href: com.microsoft.azure.keyvault.models._key_attributes.yml
@@ -2692,9 +2649,6 @@
   - uid: com.microsoft.azure.keyvault.models._secret_properties
     name: SecretProperties
     href: com.microsoft.azure.keyvault.models._secret_properties.yml
-  - uid: com.microsoft.azure.keyvault.models._secret_restore_parameters
-    name: SecretRestoreParameters
-    href: com.microsoft.azure.keyvault.models._secret_restore_parameters.yml
   - uid: com.microsoft.azure.keyvault.models._secret_set_parameters
     name: SecretSetParameters
     href: com.microsoft.azure.keyvault.models._secret_set_parameters.yml
@@ -2710,25 +2664,6 @@
   - uid: com.microsoft.azure.keyvault.models._x509_certificate_properties
     name: X509CertificateProperties
     href: com.microsoft.azure.keyvault.models._x509_certificate_properties.yml
-- uid: com.microsoft.azure.keyvault.models.custom
-  name: com.microsoft.azure.keyvault.models.custom
-  href: com.microsoft.azure.keyvault.models.custom.yml
-  items:
-  - uid: com.microsoft.azure.keyvault.models.custom._certificate_bundle
-    name: CertificateBundle
-    href: com.microsoft.azure.keyvault.models.custom._certificate_bundle.yml
-  - uid: com.microsoft.azure.keyvault.models.custom._certificate_operation
-    name: CertificateOperation
-    href: com.microsoft.azure.keyvault.models.custom._certificate_operation.yml
-  - uid: com.microsoft.azure.keyvault.models.custom._issuer_bundle
-    name: IssuerBundle
-    href: com.microsoft.azure.keyvault.models.custom._issuer_bundle.yml
-  - uid: com.microsoft.azure.keyvault.models.custom._key_bundle
-    name: KeyBundle
-    href: com.microsoft.azure.keyvault.models.custom._key_bundle.yml
-  - uid: com.microsoft.azure.keyvault.models.custom._secret_bundle
-    name: SecretBundle
-    href: com.microsoft.azure.keyvault.models.custom._secret_bundle.yml
 - uid: com.microsoft.azure.keyvault.requests
   name: com.microsoft.azure.keyvault.requests
   href: com.microsoft.azure.keyvault.requests.yml

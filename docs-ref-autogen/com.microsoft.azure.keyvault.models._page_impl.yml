@@ -18,10 +18,10 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/PageImpl.java
-      branch: v1.0.0
+      branch: bb950b2a0255c017040501de0c19e4849361ca1d
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/PageImpl.java
-    startLine: 18
+    startLine: 22
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>An instance of this class defines a page of Azure resources and a link to get the next page of resources, if any.</p>
@@ -49,7 +49,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/PageImpl.java
-    startLine: 47
+    startLine: 51
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Gets the list of items.</p>
@@ -74,7 +74,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/PageImpl.java
-    startLine: 37
+    startLine: 41
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Gets the link to the next page.</p>
@@ -99,7 +99,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/PageImpl.java
-    startLine: 68
+    startLine: 72
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Sets the list of items.</p>
@@ -128,7 +128,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/PageImpl.java
-    startLine: 57
+    startLine: 61
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Sets the link to the next page.</p>

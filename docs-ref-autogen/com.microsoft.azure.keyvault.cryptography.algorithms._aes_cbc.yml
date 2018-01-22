@@ -19,7 +19,7 @@ items:
   source:
     remote: &o0
       path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/algorithms/AesCbc.java
-      branch: v1.0.0
+      branch: bb950b2a0255c017040501de0c19e4849361ca1d
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault-cryptography/src/main/java/com/microsoft/azure/keyvault/cryptography/algorithms/AesCbc.java
     startLine: 24

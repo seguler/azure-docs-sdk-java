@@ -5,6 +5,7 @@ items:
   parent: com.microsoft.azure.keyvault.models
   children:
   - com.microsoft.azure.keyvault.models._certificate_operation.cancellationRequested()
+  - com.microsoft.azure.keyvault.models._certificate_operation.certificateOperationIdentifier()
   - com.microsoft.azure.keyvault.models._certificate_operation.csr()
   - com.microsoft.azure.keyvault.models._certificate_operation.error()
   - com.microsoft.azure.keyvault.models._certificate_operation.id()
@@ -13,6 +14,7 @@ items:
   - com.microsoft.azure.keyvault.models._certificate_operation.status()
   - com.microsoft.azure.keyvault.models._certificate_operation.statusDetails()
   - com.microsoft.azure.keyvault.models._certificate_operation.target()
+  - com.microsoft.azure.keyvault.models._certificate_operation.toString()
   - com.microsoft.azure.keyvault.models._certificate_operation.withCancellationRequested(Boolean)
   - com.microsoft.azure.keyvault.models._certificate_operation.withCsr(byte [])
   - com.microsoft.azure.keyvault.models._certificate_operation.withError(Error)
@@ -31,20 +33,16 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-      branch: v1.0.0
+      branch: bb950b2a0255c017040501de0c19e4849361ca1d
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 13
+    startLine: 23
   package: com.microsoft.azure.keyvault.models
   summary: <p>A certificate operation is returned in case of asynchronous requests. </p>
   syntax: &o1
-    content: public class CertificateOperation extends CertificateOperation
+    content: public class CertificateOperation
   inheritance:
   - java.lang.Object
-  - com.microsoft.azure.keyvault.models.custom._certificate_operation
-  inheritedMembers:
-  - com.microsoft.azure.keyvault.models.custom._certificate_operation.certificateOperationIdentifier()
-  - com.microsoft.azure.keyvault.models.custom._certificate_operation.toString()
 - uid: com.microsoft.azure.keyvault.models._certificate_operation.cancellationRequested()
   id: cancellationRequested()
   parent: com.microsoft.azure.keyvault.models._certificate_operation
@@ -59,7 +57,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 123
+    startLine: 133
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the cancellationRequested value.</p>
@@ -70,6 +68,28 @@ items:
     return:
       type: 866c2227
       description: <p>the cancellationRequested value </p>
+- uid: com.microsoft.azure.keyvault.models._certificate_operation.certificateOperationIdentifier()
+  id: certificateOperationIdentifier()
+  parent: com.microsoft.azure.keyvault.models._certificate_operation
+  href: com.microsoft.azure.keyvault.models._certificate_operation.yml
+  langs:
+  - java
+  name: certificateOperationIdentifier()
+  nameWithType: CertificateOperation.certificateOperationIdentifier()
+  fullName: CertificateOperationIdentifier com.microsoft.azure.keyvault.models.CertificateOperation.certificateOperationIdentifier()
+  overload: com.microsoft.azure.keyvault.models._certificate_operation.certificateOperationIdentifier*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
+    startLine: 252
+  package: com.microsoft.azure.keyvault.models
+  summary: <p>The certificate operation identifier. </p>
+  syntax:
+    content: public CertificateOperationIdentifier certificateOperationIdentifier()
+    return:
+      type: com.microsoft.azure.keyvault._certificate_operation_identifier
+      description: <p>the identifier value </p>
 - uid: com.microsoft.azure.keyvault.models._certificate_operation.csr()
   id: csr()
   parent: com.microsoft.azure.keyvault.models._certificate_operation
@@ -84,7 +104,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 103
+    startLine: 113
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the csr value.</p>
@@ -109,7 +129,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 183
+    startLine: 193
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the error value.</p>
@@ -134,7 +154,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 74
+    startLine: 84
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the id value.</p>
@@ -159,7 +179,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 83
+    startLine: 93
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the issuerParameters value.</p>
@@ -184,7 +204,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 223
+    startLine: 233
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the requestId value.</p>
@@ -209,7 +229,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 143
+    startLine: 153
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the status value.</p>
@@ -234,7 +254,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 163
+    startLine: 173
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the statusDetails value.</p>
@@ -259,7 +279,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 203
+    startLine: 213
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the target value.</p>
@@ -270,6 +290,26 @@ items:
     return:
       type: "26831127"
       description: <p>the target value </p>
+- uid: com.microsoft.azure.keyvault.models._certificate_operation.toString()
+  id: toString()
+  parent: com.microsoft.azure.keyvault.models._certificate_operation
+  href: com.microsoft.azure.keyvault.models._certificate_operation.yml
+  langs:
+  - java
+  name: toString()
+  nameWithType: CertificateOperation.toString()
+  fullName: String com.microsoft.azure.keyvault.models.CertificateOperation.toString()
+  overload: com.microsoft.azure.keyvault.models._certificate_operation.toString*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
+    startLine: 260
+  package: com.microsoft.azure.keyvault.models
+  syntax:
+    content: public String toString()
+    return:
+      type: "26831127"
 - uid: com.microsoft.azure.keyvault.models._certificate_operation.withCancellationRequested(Boolean)
   id: withCancellationRequested(Boolean)
   parent: com.microsoft.azure.keyvault.models._certificate_operation
@@ -284,7 +324,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 133
+    startLine: 143
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the cancellationRequested value.</p>
@@ -313,7 +353,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 113
+    startLine: 123
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the csr value.</p>
@@ -342,7 +382,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 193
+    startLine: 203
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the error value.</p>
@@ -371,7 +411,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 93
+    startLine: 103
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the issuerParameters value.</p>
@@ -400,7 +440,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 233
+    startLine: 243
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the requestId value.</p>
@@ -429,7 +469,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 153
+    startLine: 163
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the status value.</p>
@@ -458,7 +498,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 173
+    startLine: 183
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the statusDetails value.</p>
@@ -487,7 +527,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateOperation.java
-    startLine: 213
+    startLine: 223
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the target value.</p>
@@ -600,39 +640,16 @@ references:
   nameWithType: CertificateOperation.withRequestId
   fullName: CertificateOperation com.microsoft.azure.keyvault.models.CertificateOperation.withRequestId
   package: com.microsoft.azure.keyvault.models
-- uid: com.microsoft.azure.keyvault.models.custom._certificate_operation.certificateOperationIdentifier()
-  parent: com.microsoft.azure.keyvault.models.custom._certificate_operation
-  href: com.microsoft.azure.keyvault.models.custom._certificate_operation.yml
-  name: certificateOperationIdentifier()
-  nameWithType: CertificateOperation.certificateOperationIdentifier()
-  fullName: CertificateOperationIdentifier com.microsoft.azure.keyvault.models.custom.CertificateOperation.certificateOperationIdentifier()
-  type: Method
-  summary: <p>The certificate operation identifier. </p>
-  syntax:
-    content: public CertificateOperationIdentifier certificateOperationIdentifier()
-    return:
-      type: com.microsoft.azure.keyvault._certificate_operation_identifier
-      description: <p>the identifier value </p>
-- uid: com.microsoft.azure.keyvault.models.custom._certificate_operation.toString()
-  parent: com.microsoft.azure.keyvault.models.custom._certificate_operation
-  href: com.microsoft.azure.keyvault.models.custom._certificate_operation.yml
-  name: toString()
-  nameWithType: CertificateOperation.toString()
-  fullName: String com.microsoft.azure.keyvault.models.custom.CertificateOperation.toString()
-  type: Method
-  syntax:
-    content: public String toString()
-    return:
-      type: "26831127"
-- uid: com.microsoft.azure.keyvault.models.custom._certificate_operation
-  parent: com.microsoft.azure.keyvault.models.custom
-  href: com.microsoft.azure.keyvault.models.custom._certificate_operation.yml
-  name: CertificateOperation
-  nameWithType: CertificateOperation
-  fullName: com.microsoft.azure.keyvault.models.custom.CertificateOperation
-  type: Class
-  syntax:
-    content: public class CertificateOperation
+- uid: com.microsoft.azure.keyvault.models._certificate_operation.certificateOperationIdentifier*
+  name: certificateOperationIdentifier
+  nameWithType: CertificateOperation.certificateOperationIdentifier
+  fullName: CertificateOperationIdentifier com.microsoft.azure.keyvault.models.CertificateOperation.certificateOperationIdentifier
+  package: com.microsoft.azure.keyvault.models
+- uid: com.microsoft.azure.keyvault.models._certificate_operation.toString*
+  name: toString
+  nameWithType: CertificateOperation.toString
+  fullName: String com.microsoft.azure.keyvault.models.CertificateOperation.toString
+  package: com.microsoft.azure.keyvault.models
 - uid: com.microsoft.azure.keyvault.models._issuer_parameters
   parent: com.microsoft.azure.keyvault.models
   href: com.microsoft.azure.keyvault.models._issuer_parameters.yml
@@ -662,3 +679,13 @@ references:
   type: Class
   summary: <p>A certificate operation is returned in case of asynchronous requests. </p>
   syntax: *o1
+- uid: com.microsoft.azure.keyvault._certificate_operation_identifier
+  parent: com.microsoft.azure.keyvault
+  href: com.microsoft.azure.keyvault._certificate_operation_identifier.yml
+  name: CertificateOperationIdentifier
+  nameWithType: CertificateOperationIdentifier
+  fullName: com.microsoft.azure.keyvault.CertificateOperationIdentifier
+  type: Class
+  summary: <p>The certificate operation identifier. </p>
+  syntax:
+    content: public class CertificateOperationIdentifier

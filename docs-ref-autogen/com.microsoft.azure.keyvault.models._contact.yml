@@ -20,10 +20,10 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Contact.java
-      branch: v1.0.0
+      branch: bb950b2a0255c017040501de0c19e4849361ca1d
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Contact.java
-    startLine: 13
+    startLine: 17
   package: com.microsoft.azure.keyvault.models
   summary: <p>The contact information for the vault certificates. </p>
   syntax: &o1
@@ -44,7 +44,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Contact.java
-    startLine: 37
+    startLine: 41
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the emailAddress value.</p>
@@ -69,7 +69,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Contact.java
-    startLine: 57
+    startLine: 61
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the name value.</p>
@@ -94,7 +94,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Contact.java
-    startLine: 77
+    startLine: 81
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the phone value.</p>
@@ -119,7 +119,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Contact.java
-    startLine: 47
+    startLine: 51
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the emailAddress value.</p>
@@ -148,7 +148,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Contact.java
-    startLine: 67
+    startLine: 71
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the name value.</p>
@@ -177,7 +177,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Contact.java
-    startLine: 87
+    startLine: 91
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the phone value.</p>

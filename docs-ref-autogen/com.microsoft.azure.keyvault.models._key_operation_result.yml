@@ -16,10 +16,10 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyOperationResult.java
-      branch: v1.0.0
+      branch: bb950b2a0255c017040501de0c19e4849361ca1d
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyOperationResult.java
-    startLine: 14
+    startLine: 18
   package: com.microsoft.azure.keyvault.models
   summary: <p>The key operation result. </p>
   syntax:
@@ -40,7 +40,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyOperationResult.java
-    startLine: 32
+    startLine: 36
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the kid value.</p>
@@ -65,7 +65,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyOperationResult.java
-    startLine: 41
+    startLine: 45
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the result value.</p>

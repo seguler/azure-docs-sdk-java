@@ -4,13 +4,11 @@ items:
   id: _key_create_parameters
   parent: com.microsoft.azure.keyvault.models
   children:
-  - com.microsoft.azure.keyvault.models._key_create_parameters.curve()
   - com.microsoft.azure.keyvault.models._key_create_parameters.keyAttributes()
   - com.microsoft.azure.keyvault.models._key_create_parameters.keyOps()
   - com.microsoft.azure.keyvault.models._key_create_parameters.keySize()
   - com.microsoft.azure.keyvault.models._key_create_parameters.kty()
   - com.microsoft.azure.keyvault.models._key_create_parameters.tags()
-  - com.microsoft.azure.keyvault.models._key_create_parameters.withCurve(JsonWebKeyCurveName)
   - com.microsoft.azure.keyvault.models._key_create_parameters.withKeyAttributes(KeyAttributes)
   - com.microsoft.azure.keyvault.models._key_create_parameters.withKeyOps(List<JsonWebKeyOperation>)
   - com.microsoft.azure.keyvault.models._key_create_parameters.withKeySize(Integer)
@@ -26,41 +24,16 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyCreateParameters.java
-      branch: v1.0.0
+      branch: bb950b2a0255c017040501de0c19e4849361ca1d
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyCreateParameters.java
-    startLine: 17
+    startLine: 21
   package: com.microsoft.azure.keyvault.models
   summary: <p>The key create parameters. </p>
   syntax: &o1
     content: public class KeyCreateParameters
   inheritance:
   - java.lang.Object
-- uid: com.microsoft.azure.keyvault.models._key_create_parameters.curve()
-  id: curve()
-  parent: com.microsoft.azure.keyvault.models._key_create_parameters
-  href: com.microsoft.azure.keyvault.models._key_create_parameters.yml
-  langs:
-  - java
-  name: curve()
-  nameWithType: KeyCreateParameters.curve()
-  fullName: JsonWebKeyCurveName com.microsoft.azure.keyvault.models.KeyCreateParameters.curve()
-  overload: com.microsoft.azure.keyvault.models._key_create_parameters.curve*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyCreateParameters.java
-    startLine: 161
-  package: com.microsoft.azure.keyvault.models
-  summary: >-
-    <p>Get the curve value.</p>
-
-    <p></p>
-  syntax:
-    content: public JsonWebKeyCurveName curve()
-    return:
-      type: com.microsoft.azure.keyvault.models._json_web_key_curve_name
-      description: <p>the curve value </p>
 - uid: com.microsoft.azure.keyvault.models._key_create_parameters.keyAttributes()
   id: keyAttributes()
   parent: com.microsoft.azure.keyvault.models._key_create_parameters
@@ -75,7 +48,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyCreateParameters.java
-    startLine: 121
+    startLine: 119
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the keyAttributes value.</p>
@@ -100,7 +73,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyCreateParameters.java
-    startLine: 101
+    startLine: 99
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the keyOps value.</p>
@@ -125,7 +98,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyCreateParameters.java
-    startLine: 81
+    startLine: 79
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the keySize value.</p>
@@ -150,7 +123,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyCreateParameters.java
-    startLine: 61
+    startLine: 59
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the kty value.</p>
@@ -175,7 +148,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyCreateParameters.java
-    startLine: 141
+    startLine: 139
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the tags value.</p>
@@ -186,35 +159,6 @@ items:
     return:
       type: 689c8cb5
       description: <p>the tags value </p>
-- uid: com.microsoft.azure.keyvault.models._key_create_parameters.withCurve(JsonWebKeyCurveName)
-  id: withCurve(JsonWebKeyCurveName)
-  parent: com.microsoft.azure.keyvault.models._key_create_parameters
-  href: com.microsoft.azure.keyvault.models._key_create_parameters.yml
-  langs:
-  - java
-  name: withCurve(JsonWebKeyCurveName curve)
-  nameWithType: KeyCreateParameters.withCurve(JsonWebKeyCurveName curve)
-  fullName: KeyCreateParameters com.microsoft.azure.keyvault.models.KeyCreateParameters.withCurve(JsonWebKeyCurveName curve)
-  overload: com.microsoft.azure.keyvault.models._key_create_parameters.withCurve*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyCreateParameters.java
-    startLine: 171
-  package: com.microsoft.azure.keyvault.models
-  summary: >-
-    <p>Set the curve value.</p>
-
-    <p></p>
-  syntax:
-    content: public KeyCreateParameters withCurve(JsonWebKeyCurveName curve)
-    parameters:
-    - id: curve
-      type: com.microsoft.azure.keyvault.models._json_web_key_curve_name
-      description: <p>the curve value to set </p>
-    return:
-      type: com.microsoft.azure.keyvault.models._key_create_parameters
-      description: <p>the <xref uid="com.microsoft.azure.keyvault.models._key_create_parameters" data-throw-if-not-resolved="false">KeyCreateParameters</xref> object itself. </p>
 - uid: com.microsoft.azure.keyvault.models._key_create_parameters.withKeyAttributes(KeyAttributes)
   id: withKeyAttributes(KeyAttributes)
   parent: com.microsoft.azure.keyvault.models._key_create_parameters
@@ -229,7 +173,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyCreateParameters.java
-    startLine: 131
+    startLine: 129
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the keyAttributes value.</p>
@@ -258,7 +202,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyCreateParameters.java
-    startLine: 111
+    startLine: 109
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the keyOps value.</p>
@@ -287,7 +231,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyCreateParameters.java
-    startLine: 91
+    startLine: 89
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the keySize value.</p>
@@ -316,7 +260,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyCreateParameters.java
-    startLine: 71
+    startLine: 69
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the kty value.</p>
@@ -345,7 +289,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyCreateParameters.java
-    startLine: 151
+    startLine: 149
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the tags value.</p>
@@ -429,16 +373,6 @@ references:
   nameWithType: KeyCreateParameters.withTags
   fullName: KeyCreateParameters com.microsoft.azure.keyvault.models.KeyCreateParameters.withTags
   package: com.microsoft.azure.keyvault.models
-- uid: com.microsoft.azure.keyvault.models._key_create_parameters.curve*
-  name: curve
-  nameWithType: KeyCreateParameters.curve
-  fullName: JsonWebKeyCurveName com.microsoft.azure.keyvault.models.KeyCreateParameters.curve
-  package: com.microsoft.azure.keyvault.models
-- uid: com.microsoft.azure.keyvault.models._key_create_parameters.withCurve*
-  name: withCurve
-  nameWithType: KeyCreateParameters.withCurve
-  fullName: KeyCreateParameters com.microsoft.azure.keyvault.models.KeyCreateParameters.withCurve
-  package: com.microsoft.azure.keyvault.models
 - uid: com.microsoft.azure.keyvault.webkey._json_web_key_type
   parent: com.microsoft.azure.keyvault.webkey
   href: com.microsoft.azure.keyvault.webkey._json_web_key_type.yml
@@ -469,16 +403,6 @@ references:
   summary: <p>The attributes of a key managed by the key vault service. </p>
   syntax:
     content: public class KeyAttributes extends Attributes
-- uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name
-  parent: com.microsoft.azure.keyvault.models
-  href: com.microsoft.azure.keyvault.models._json_web_key_curve_name.yml
-  name: JsonWebKeyCurveName
-  nameWithType: JsonWebKeyCurveName
-  fullName: com.microsoft.azure.keyvault.models.JsonWebKeyCurveName
-  type: Class
-  summary: <p>Defines values for <xref uid="com.microsoft.azure.keyvault.models._json_web_key_curve_name" data-throw-if-not-resolved="false">JsonWebKeyCurveName</xref>. </p>
-  syntax:
-    content: public class JsonWebKeyCurveName
 - uid: com.microsoft.azure.keyvault.models._key_create_parameters
   parent: com.microsoft.azure.keyvault.models
   href: com.microsoft.azure.keyvault.models._key_create_parameters.yml

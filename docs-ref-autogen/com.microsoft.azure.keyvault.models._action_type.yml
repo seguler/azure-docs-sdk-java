@@ -19,10 +19,10 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/ActionType.java
-      branch: v1.0.0
+      branch: bb950b2a0255c017040501de0c19e4849361ca1d
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/ActionType.java
-    startLine: 14
+    startLine: 18
   package: com.microsoft.azure.keyvault.models
   summary: <p>Defines values for <xref uid="com.microsoft.azure.keyvault.models._action_type" data-throw-if-not-resolved="false">ActionType</xref>. </p>
   syntax: &o1
@@ -44,7 +44,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/ActionType.java
-    startLine: 24
+    startLine: 28
   package: com.microsoft.azure.keyvault.models
   syntax:
     content: public ActionType(String value)
@@ -64,7 +64,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/ActionType.java
-    startLine: 19
+    startLine: 23
   package: com.microsoft.azure.keyvault.models
   summary: <p>Enum value AutoRenew. </p>
   syntax:
@@ -82,7 +82,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/ActionType.java
-    startLine: 16
+    startLine: 20
   package: com.microsoft.azure.keyvault.models
   summary: <p>Enum value EmailContacts. </p>
   syntax:
@@ -101,7 +101,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/ActionType.java
-    startLine: 35
+    startLine: 39
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Parses a serialized value to a <xref uid="com.microsoft.azure.keyvault.models._action_type" data-throw-if-not-resolved="false">ActionType</xref> instance.</p>
@@ -130,7 +130,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/ActionType.java
-    startLine: 47
+    startLine: 51
   package: com.microsoft.azure.keyvault.models
   syntax:
     content: public String toString()

@@ -24,10 +24,10 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateImportParameters.java
-      branch: v1.0.0
+      branch: bb950b2a0255c017040501de0c19e4849361ca1d
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateImportParameters.java
-    startLine: 14
+    startLine: 18
   package: com.microsoft.azure.keyvault.models
   summary: <p>The certificate import parameters. </p>
   syntax: &o1
@@ -48,7 +48,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateImportParameters.java
-    startLine: 52
+    startLine: 56
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the base64EncodedCertificate value.</p>
@@ -73,7 +73,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateImportParameters.java
-    startLine: 112
+    startLine: 116
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the certificateAttributes value.</p>
@@ -98,7 +98,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateImportParameters.java
-    startLine: 92
+    startLine: 96
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the certificatePolicy value.</p>
@@ -123,7 +123,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateImportParameters.java
-    startLine: 72
+    startLine: 76
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the password value.</p>
@@ -148,7 +148,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateImportParameters.java
-    startLine: 132
+    startLine: 136
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the tags value.</p>
@@ -173,7 +173,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateImportParameters.java
-    startLine: 62
+    startLine: 66
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the base64EncodedCertificate value.</p>
@@ -202,7 +202,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateImportParameters.java
-    startLine: 122
+    startLine: 126
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the certificateAttributes value.</p>
@@ -231,7 +231,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateImportParameters.java
-    startLine: 102
+    startLine: 106
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the certificatePolicy value.</p>
@@ -260,7 +260,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateImportParameters.java
-    startLine: 82
+    startLine: 86
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the password value.</p>
@@ -289,7 +289,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateImportParameters.java
-    startLine: 142
+    startLine: 146
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the tags value.</p>

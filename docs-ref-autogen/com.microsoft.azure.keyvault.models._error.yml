@@ -17,10 +17,10 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Error.java
-      branch: v1.0.0
+      branch: bb950b2a0255c017040501de0c19e4849361ca1d
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Error.java
-    startLine: 13
+    startLine: 17
   package: com.microsoft.azure.keyvault.models
   summary: <p>The key vault server error. </p>
   syntax: &o1
@@ -41,7 +41,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Error.java
-    startLine: 37
+    startLine: 41
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the code value.</p>
@@ -66,7 +66,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Error.java
-    startLine: 55
+    startLine: 59
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the innerError value.</p>
@@ -91,7 +91,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Error.java
-    startLine: 46
+    startLine: 50
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the message value.</p>

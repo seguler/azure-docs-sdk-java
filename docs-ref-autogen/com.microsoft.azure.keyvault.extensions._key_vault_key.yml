@@ -26,7 +26,7 @@ items:
   source:
     remote: &o0
       path: azure-keyvault-extensions/src/main/java/com/microsoft/azure/keyvault/extensions/KeyVaultKey.java
-      branch: v1.0.0
+      branch: bb950b2a0255c017040501de0c19e4849361ca1d
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault-extensions/src/main/java/com/microsoft/azure/keyvault/extensions/KeyVaultKey.java
     startLine: 41
@@ -523,8 +523,9 @@ references:
   nameWithType: KeyVaultClient
   fullName: com.microsoft.azure.keyvault.KeyVaultClient
   type: Class
+  summary: <p>Initializes a new instance of the <xref uid="com.microsoft.azure.keyvault._key_vault_client" data-throw-if-not-resolved="false">KeyVaultClient</xref> class. </p>
   syntax:
-    content: public class KeyVaultClient extends KeyVaultClientCustomImpl implements KeyVaultClientCustom
+    content: public class KeyVaultClient
 - uid: com.microsoft.azure.keyvault.models._key_bundle
   parent: com.microsoft.azure.keyvault.models
   href: com.microsoft.azure.keyvault.models._key_bundle.yml
@@ -534,7 +535,7 @@ references:
   type: Class
   summary: <p>A <xref uid="com.microsoft.azure.keyvault.models._key_bundle" data-throw-if-not-resolved="false">KeyBundle</xref> consisting of a WebKey plus its attributes. </p>
   syntax:
-    content: public class KeyBundle extends KeyBundle
+    content: public class KeyBundle
 - uid: com.microsoft.azure.keyvault.core._i_key.getDefaultEncryptionAlgorithm()
   parent: com.microsoft.azure.keyvault.core._i_key
   href: com.microsoft.azure.keyvault.core._i_key.yml
