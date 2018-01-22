@@ -1,0 +1,254 @@
+### YamlMime:ManagedReference
+items:
+- uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name
+  id: _json_web_key_curve_name
+  parent: com.microsoft.azure.keyvault.models
+  children:
+  - com.microsoft.azure.keyvault.models._json_web_key_curve_name.equals(Object)
+  - com.microsoft.azure.keyvault.models._json_web_key_curve_name.hashCode()
+  - com.microsoft.azure.keyvault.models._json_web_key_curve_name.JsonWebKeyCurveName(String)
+  - com.microsoft.azure.keyvault.models._json_web_key_curve_name.P_256
+  - com.microsoft.azure.keyvault.models._json_web_key_curve_name.P_384
+  - com.microsoft.azure.keyvault.models._json_web_key_curve_name.P_521
+  - com.microsoft.azure.keyvault.models._json_web_key_curve_name.SECP256K1
+  - com.microsoft.azure.keyvault.models._json_web_key_curve_name.toString()
+  href: com.microsoft.azure.keyvault.models._json_web_key_curve_name.yml
+  langs:
+  - java
+  name: JsonWebKeyCurveName
+  nameWithType: JsonWebKeyCurveName
+  fullName: com.microsoft.azure.keyvault.models.JsonWebKeyCurveName
+  type: Class
+  source:
+    remote: &o0
+      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/JsonWebKeyCurveName.java
+      branch: v1.0.0
+      repo: https://github.com/Azure/azure-keyvault-java
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/JsonWebKeyCurveName.java
+    startLine: 13
+  package: com.microsoft.azure.keyvault.models
+  summary: <p>Defines values for <xref uid="com.microsoft.azure.keyvault.models._json_web_key_curve_name" data-throw-if-not-resolved="false">JsonWebKeyCurveName</xref>. </p>
+  syntax: &o1
+    content: public class JsonWebKeyCurveName
+  inheritance:
+  - java.lang.Object
+- uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name.equals(Object)
+  id: equals(Object)
+  parent: com.microsoft.azure.keyvault.models._json_web_key_curve_name
+  href: com.microsoft.azure.keyvault.models._json_web_key_curve_name.yml
+  langs:
+  - java
+  name: equals(Object obj)
+  nameWithType: JsonWebKeyCurveName.equals(Object obj)
+  fullName: boolean com.microsoft.azure.keyvault.models.JsonWebKeyCurveName.equals(Object obj)
+  overload: com.microsoft.azure.keyvault.models._json_web_key_curve_name.equals*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/JsonWebKeyCurveName.java
+    startLine: 48
+  package: com.microsoft.azure.keyvault.models
+  syntax:
+    content: public boolean equals(Object obj)
+    parameters:
+    - id: obj
+      type: "79317049"
+    return:
+      type: 4fc6e284
+- uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name.hashCode()
+  id: hashCode()
+  parent: com.microsoft.azure.keyvault.models._json_web_key_curve_name
+  href: com.microsoft.azure.keyvault.models._json_web_key_curve_name.yml
+  langs:
+  - java
+  name: hashCode()
+  nameWithType: JsonWebKeyCurveName.hashCode()
+  fullName: int com.microsoft.azure.keyvault.models.JsonWebKeyCurveName.hashCode()
+  overload: com.microsoft.azure.keyvault.models._json_web_key_curve_name.hashCode*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/JsonWebKeyCurveName.java
+    startLine: 43
+  package: com.microsoft.azure.keyvault.models
+  syntax:
+    content: public int hashCode()
+    return:
+      type: f75371fa
+- uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name.JsonWebKeyCurveName(String)
+  id: JsonWebKeyCurveName(String)
+  parent: com.microsoft.azure.keyvault.models._json_web_key_curve_name
+  href: com.microsoft.azure.keyvault.models._json_web_key_curve_name.yml
+  langs:
+  - java
+  name: JsonWebKeyCurveName(String value)
+  nameWithType: JsonWebKeyCurveName.JsonWebKeyCurveName(String value)
+  fullName: com.microsoft.azure.keyvault.models.JsonWebKeyCurveName.JsonWebKeyCurveName(String value)
+  overload: com.microsoft.azure.keyvault.models._json_web_key_curve_name.JsonWebKeyCurveName*
+  type: Constructor
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/JsonWebKeyCurveName.java
+    startLine: 32
+  package: com.microsoft.azure.keyvault.models
+  summary: <p>Creates a custom value for <xref uid="com.microsoft.azure.keyvault.models._json_web_key_curve_name" data-throw-if-not-resolved="false">JsonWebKeyCurveName</xref>. </p>
+  syntax:
+    content: public JsonWebKeyCurveName(String value)
+    parameters:
+    - id: value
+      type: "26831127"
+      description: <p>the custom value </p>
+- uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name.P_256
+  id: P_256
+  parent: com.microsoft.azure.keyvault.models._json_web_key_curve_name
+  href: com.microsoft.azure.keyvault.models._json_web_key_curve_name.yml
+  langs:
+  - java
+  name: P_256
+  nameWithType: JsonWebKeyCurveName.P_256
+  fullName: final JsonWebKeyCurveName com.microsoft.azure.keyvault.models.JsonWebKeyCurveName.P_256
+  type: Field
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/JsonWebKeyCurveName.java
+    startLine: 15
+  package: com.microsoft.azure.keyvault.models
+  summary: <p>Static value P-256 for <xref uid="com.microsoft.azure.keyvault.models._json_web_key_curve_name" data-throw-if-not-resolved="false">JsonWebKeyCurveName</xref>. </p>
+  syntax:
+    content: public static final JsonWebKeyCurveName P_256= new JsonWebKeyCurveName("P-256")
+    return:
+      type: 93de0ef9com.microsoft.azure.keyvault.models._json_web_key_curve_name
+- uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name.P_384
+  id: P_384
+  parent: com.microsoft.azure.keyvault.models._json_web_key_curve_name
+  href: com.microsoft.azure.keyvault.models._json_web_key_curve_name.yml
+  langs:
+  - java
+  name: P_384
+  nameWithType: JsonWebKeyCurveName.P_384
+  fullName: final JsonWebKeyCurveName com.microsoft.azure.keyvault.models.JsonWebKeyCurveName.P_384
+  type: Field
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/JsonWebKeyCurveName.java
+    startLine: 18
+  package: com.microsoft.azure.keyvault.models
+  summary: <p>Static value P-384 for <xref uid="com.microsoft.azure.keyvault.models._json_web_key_curve_name" data-throw-if-not-resolved="false">JsonWebKeyCurveName</xref>. </p>
+  syntax:
+    content: public static final JsonWebKeyCurveName P_384= new JsonWebKeyCurveName("P-384")
+    return:
+      type: 93de0ef9com.microsoft.azure.keyvault.models._json_web_key_curve_name
+- uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name.P_521
+  id: P_521
+  parent: com.microsoft.azure.keyvault.models._json_web_key_curve_name
+  href: com.microsoft.azure.keyvault.models._json_web_key_curve_name.yml
+  langs:
+  - java
+  name: P_521
+  nameWithType: JsonWebKeyCurveName.P_521
+  fullName: final JsonWebKeyCurveName com.microsoft.azure.keyvault.models.JsonWebKeyCurveName.P_521
+  type: Field
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/JsonWebKeyCurveName.java
+    startLine: 21
+  package: com.microsoft.azure.keyvault.models
+  summary: <p>Static value P-521 for <xref uid="com.microsoft.azure.keyvault.models._json_web_key_curve_name" data-throw-if-not-resolved="false">JsonWebKeyCurveName</xref>. </p>
+  syntax:
+    content: public static final JsonWebKeyCurveName P_521= new JsonWebKeyCurveName("P-521")
+    return:
+      type: 93de0ef9com.microsoft.azure.keyvault.models._json_web_key_curve_name
+- uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name.SECP256K1
+  id: SECP256K1
+  parent: com.microsoft.azure.keyvault.models._json_web_key_curve_name
+  href: com.microsoft.azure.keyvault.models._json_web_key_curve_name.yml
+  langs:
+  - java
+  name: SECP256K1
+  nameWithType: JsonWebKeyCurveName.SECP256K1
+  fullName: final JsonWebKeyCurveName com.microsoft.azure.keyvault.models.JsonWebKeyCurveName.SECP256K1
+  type: Field
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/JsonWebKeyCurveName.java
+    startLine: 24
+  package: com.microsoft.azure.keyvault.models
+  summary: <p>Static value SECP256K1 for <xref uid="com.microsoft.azure.keyvault.models._json_web_key_curve_name" data-throw-if-not-resolved="false">JsonWebKeyCurveName</xref>. </p>
+  syntax:
+    content: public static final JsonWebKeyCurveName SECP256K1= new JsonWebKeyCurveName("SECP256K1")
+    return:
+      type: 93de0ef9com.microsoft.azure.keyvault.models._json_web_key_curve_name
+- uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name.toString()
+  id: toString()
+  parent: com.microsoft.azure.keyvault.models._json_web_key_curve_name
+  href: com.microsoft.azure.keyvault.models._json_web_key_curve_name.yml
+  langs:
+  - java
+  name: toString()
+  nameWithType: JsonWebKeyCurveName.toString()
+  fullName: String com.microsoft.azure.keyvault.models.JsonWebKeyCurveName.toString()
+  overload: com.microsoft.azure.keyvault.models._json_web_key_curve_name.toString*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/JsonWebKeyCurveName.java
+    startLine: 38
+  package: com.microsoft.azure.keyvault.models
+  syntax:
+    content: public String toString()
+    return:
+      type: "26831127"
+references:
+- uid: 93de0ef9com.microsoft.azure.keyvault.models._json_web_key_curve_name
+  spec.java:
+  - name: 'final '
+    fullName: 'final '
+  - uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name
+    name: JsonWebKeyCurveName
+    fullName: com.microsoft.azure.keyvault.models.JsonWebKeyCurveName
+    href: com.microsoft.azure.keyvault.models._json_web_key_curve_name.yml
+- uid: "26831127"
+  spec.java:
+  - name: String
+    fullName: String
+- uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name.JsonWebKeyCurveName*
+  name: JsonWebKeyCurveName
+  nameWithType: JsonWebKeyCurveName.JsonWebKeyCurveName
+  fullName: com.microsoft.azure.keyvault.models.JsonWebKeyCurveName.JsonWebKeyCurveName
+  package: com.microsoft.azure.keyvault.models
+- uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name.toString*
+  name: toString
+  nameWithType: JsonWebKeyCurveName.toString
+  fullName: String com.microsoft.azure.keyvault.models.JsonWebKeyCurveName.toString
+  package: com.microsoft.azure.keyvault.models
+- uid: f75371fa
+  spec.java:
+  - name: int
+    fullName: int
+- uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name.hashCode*
+  name: hashCode
+  nameWithType: JsonWebKeyCurveName.hashCode
+  fullName: int com.microsoft.azure.keyvault.models.JsonWebKeyCurveName.hashCode
+  package: com.microsoft.azure.keyvault.models
+- uid: "79317049"
+  spec.java:
+  - name: Object
+    fullName: Object
+- uid: 4fc6e284
+  spec.java:
+  - name: boolean
+    fullName: boolean
+- uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name.equals*
+  name: equals
+  nameWithType: JsonWebKeyCurveName.equals
+  fullName: boolean com.microsoft.azure.keyvault.models.JsonWebKeyCurveName.equals
+  package: com.microsoft.azure.keyvault.models
+- uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name
+  parent: com.microsoft.azure.keyvault.models
+  href: com.microsoft.azure.keyvault.models._json_web_key_curve_name.yml
+  name: JsonWebKeyCurveName
+  nameWithType: JsonWebKeyCurveName
+  fullName: com.microsoft.azure.keyvault.models.JsonWebKeyCurveName
+  type: Class
+  summary: <p>Defines values for <xref uid="com.microsoft.azure.keyvault.models._json_web_key_curve_name" data-throw-if-not-resolved="false">JsonWebKeyCurveName</xref>. </p>
+  syntax: *o1

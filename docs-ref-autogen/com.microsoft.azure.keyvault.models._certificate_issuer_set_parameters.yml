@@ -22,10 +22,10 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateIssuerSetParameters.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
+      branch: v1.0.0
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateIssuerSetParameters.java
-    startLine: 17
+    startLine: 13
   package: com.microsoft.azure.keyvault.models
   summary: <p>The certificate issuer set parameters. </p>
   syntax: &o1
@@ -46,7 +46,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateIssuerSetParameters.java
-    startLine: 107
+    startLine: 103
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the attributes value.</p>
@@ -71,7 +71,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateIssuerSetParameters.java
-    startLine: 67
+    startLine: 63
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the credentials value.</p>
@@ -96,7 +96,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateIssuerSetParameters.java
-    startLine: 87
+    startLine: 83
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the organizationDetails value.</p>
@@ -121,7 +121,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateIssuerSetParameters.java
-    startLine: 47
+    startLine: 43
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the provider value.</p>
@@ -146,7 +146,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateIssuerSetParameters.java
-    startLine: 117
+    startLine: 113
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the attributes value.</p>
@@ -175,7 +175,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateIssuerSetParameters.java
-    startLine: 77
+    startLine: 73
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the credentials value.</p>
@@ -204,7 +204,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateIssuerSetParameters.java
-    startLine: 97
+    startLine: 93
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the organizationDetails value.</p>
@@ -233,7 +233,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateIssuerSetParameters.java
-    startLine: 57
+    startLine: 53
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the provider value.</p>

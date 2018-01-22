@@ -16,10 +16,10 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyRestoreParameters.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
+      branch: v1.0.0
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyRestoreParameters.java
-    startLine: 18
+    startLine: 14
   package: com.microsoft.azure.keyvault.models
   summary: <p>The key restore parameters. </p>
   syntax: &o1
@@ -40,7 +40,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyRestoreParameters.java
-    startLine: 30
+    startLine: 26
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the keyBundleBackup value.</p>
@@ -65,7 +65,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyRestoreParameters.java
-    startLine: 43
+    startLine: 39
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the keyBundleBackup value.</p>

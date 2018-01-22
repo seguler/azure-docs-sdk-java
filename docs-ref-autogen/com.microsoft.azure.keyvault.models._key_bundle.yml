@@ -6,10 +6,8 @@ items:
   children:
   - com.microsoft.azure.keyvault.models._key_bundle.attributes()
   - com.microsoft.azure.keyvault.models._key_bundle.key()
-  - com.microsoft.azure.keyvault.models._key_bundle.keyIdentifier()
   - com.microsoft.azure.keyvault.models._key_bundle.managed()
   - com.microsoft.azure.keyvault.models._key_bundle.tags()
-  - com.microsoft.azure.keyvault.models._key_bundle.toString()
   - com.microsoft.azure.keyvault.models._key_bundle.withAttributes(KeyAttributes)
   - com.microsoft.azure.keyvault.models._key_bundle.withKey(JsonWebKey)
   - com.microsoft.azure.keyvault.models._key_bundle.withTags(Map<String, String>)
@@ -23,16 +21,20 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
+      branch: v1.0.0
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
-    startLine: 25
+    startLine: 15
   package: com.microsoft.azure.keyvault.models
   summary: <p>A <xref uid="com.microsoft.azure.keyvault.models._key_bundle" data-throw-if-not-resolved="false">KeyBundle</xref> consisting of a WebKey plus its attributes. </p>
   syntax: &o1
-    content: public class KeyBundle
+    content: public class KeyBundle extends KeyBundle
   inheritance:
   - java.lang.Object
+  - com.microsoft.azure.keyvault.models.custom._key_bundle
+  inheritedMembers:
+  - com.microsoft.azure.keyvault.models.custom._key_bundle.keyIdentifier()
+  - com.microsoft.azure.keyvault.models.custom._key_bundle.toString()
 - uid: com.microsoft.azure.keyvault.models._key_bundle.attributes()
   id: attributes()
   parent: com.microsoft.azure.keyvault.models._key_bundle
@@ -47,7 +49,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
-    startLine: 76
+    startLine: 66
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the attributes value.</p>
@@ -72,7 +74,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
-    startLine: 56
+    startLine: 46
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the key value.</p>
@@ -83,28 +85,6 @@ items:
     return:
       type: com.microsoft.azure.keyvault.webkey._json_web_key
       description: <p>the key value </p>
-- uid: com.microsoft.azure.keyvault.models._key_bundle.keyIdentifier()
-  id: keyIdentifier()
-  parent: com.microsoft.azure.keyvault.models._key_bundle
-  href: com.microsoft.azure.keyvault.models._key_bundle.yml
-  langs:
-  - java
-  name: keyIdentifier()
-  nameWithType: KeyBundle.keyIdentifier()
-  fullName: KeyIdentifier com.microsoft.azure.keyvault.models.KeyBundle.keyIdentifier()
-  overload: com.microsoft.azure.keyvault.models._key_bundle.keyIdentifier*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
-    startLine: 124
-  package: com.microsoft.azure.keyvault.models
-  summary: <p>The key identifier. </p>
-  syntax:
-    content: public KeyIdentifier keyIdentifier()
-    return:
-      type: com.microsoft.azure.keyvault._key_identifier
-      description: <p>identifier for the key </p>
 - uid: com.microsoft.azure.keyvault.models._key_bundle.managed()
   id: managed()
   parent: com.microsoft.azure.keyvault.models._key_bundle
@@ -119,7 +99,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
-    startLine: 116
+    startLine: 106
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the managed value.</p>
@@ -144,7 +124,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
-    startLine: 96
+    startLine: 86
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the tags value.</p>
@@ -155,26 +135,6 @@ items:
     return:
       type: 689c8cb5
       description: <p>the tags value </p>
-- uid: com.microsoft.azure.keyvault.models._key_bundle.toString()
-  id: toString()
-  parent: com.microsoft.azure.keyvault.models._key_bundle
-  href: com.microsoft.azure.keyvault.models._key_bundle.yml
-  langs:
-  - java
-  name: toString()
-  nameWithType: KeyBundle.toString()
-  fullName: String com.microsoft.azure.keyvault.models.KeyBundle.toString()
-  overload: com.microsoft.azure.keyvault.models._key_bundle.toString*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
-    startLine: 131
-  package: com.microsoft.azure.keyvault.models
-  syntax:
-    content: public String toString()
-    return:
-      type: "26831127"
 - uid: com.microsoft.azure.keyvault.models._key_bundle.withAttributes(KeyAttributes)
   id: withAttributes(KeyAttributes)
   parent: com.microsoft.azure.keyvault.models._key_bundle
@@ -189,7 +149,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
-    startLine: 86
+    startLine: 76
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the attributes value.</p>
@@ -218,7 +178,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
-    startLine: 66
+    startLine: 56
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the key value.</p>
@@ -247,7 +207,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
-    startLine: 106
+    startLine: 96
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the tags value.</p>
@@ -306,20 +266,49 @@ references:
   nameWithType: KeyBundle.managed
   fullName: Boolean com.microsoft.azure.keyvault.models.KeyBundle.managed
   package: com.microsoft.azure.keyvault.models
-- uid: com.microsoft.azure.keyvault.models._key_bundle.keyIdentifier*
-  name: keyIdentifier
-  nameWithType: KeyBundle.keyIdentifier
-  fullName: KeyIdentifier com.microsoft.azure.keyvault.models.KeyBundle.keyIdentifier
-  package: com.microsoft.azure.keyvault.models
-- uid: "26831127"
-  spec.java:
-  - name: String
-    fullName: String
-- uid: com.microsoft.azure.keyvault.models._key_bundle.toString*
-  name: toString
-  nameWithType: KeyBundle.toString
-  fullName: String com.microsoft.azure.keyvault.models.KeyBundle.toString
-  package: com.microsoft.azure.keyvault.models
+- uid: com.microsoft.azure.keyvault.models.custom._key_bundle.keyIdentifier()
+  parent: com.microsoft.azure.keyvault.models.custom._key_bundle
+  href: com.microsoft.azure.keyvault.models.custom._key_bundle.yml
+  name: keyIdentifier()
+  nameWithType: KeyBundle.keyIdentifier()
+  fullName: KeyIdentifier com.microsoft.azure.keyvault.models.custom.KeyBundle.keyIdentifier()
+  type: Method
+  summary: <p>The key identifier. </p>
+  syntax:
+    content: public KeyIdentifier keyIdentifier()
+    return:
+      type: com.microsoft.azure.keyvault._key_identifier
+      description: <p>identifier for the key </p>
+- uid: com.microsoft.azure.keyvault.models.custom._key_bundle.toString()
+  parent: com.microsoft.azure.keyvault.models.custom._key_bundle
+  href: com.microsoft.azure.keyvault.models.custom._key_bundle.yml
+  name: toString()
+  nameWithType: KeyBundle.toString()
+  fullName: String com.microsoft.azure.keyvault.models.custom.KeyBundle.toString()
+  type: Method
+  syntax:
+    content: public String toString()
+    return:
+      type: "26831127"
+- uid: com.microsoft.azure.keyvault.models.custom._key_bundle
+  parent: com.microsoft.azure.keyvault.models.custom
+  href: com.microsoft.azure.keyvault.models.custom._key_bundle.yml
+  name: KeyBundle
+  nameWithType: KeyBundle
+  fullName: com.microsoft.azure.keyvault.models.custom.KeyBundle
+  type: Class
+  syntax:
+    content: public class KeyBundle
+- uid: com.microsoft.azure.keyvault.models._deleted_key_bundle
+  parent: com.microsoft.azure.keyvault.models
+  href: com.microsoft.azure.keyvault.models._deleted_key_bundle.yml
+  name: DeletedKeyBundle
+  nameWithType: DeletedKeyBundle
+  fullName: com.microsoft.azure.keyvault.models.DeletedKeyBundle
+  type: Class
+  summary: <p>A <xref uid="com.microsoft.azure.keyvault.models._deleted_key_bundle" data-throw-if-not-resolved="false">DeletedKeyBundle</xref> consisting of a WebKey plus its <xref uid="com.microsoft.azure.keyvault.models._attributes" data-throw-if-not-resolved="false">Attributes</xref> and deletion info. </p>
+  syntax:
+    content: public class DeletedKeyBundle extends KeyBundle
 - uid: com.microsoft.azure.keyvault.webkey._json_web_key
   parent: com.microsoft.azure.keyvault.webkey
   href: com.microsoft.azure.keyvault.webkey._json_web_key.yml
@@ -349,13 +338,3 @@ references:
   type: Class
   summary: <p>A <xref uid="com.microsoft.azure.keyvault.models._key_bundle" data-throw-if-not-resolved="false">KeyBundle</xref> consisting of a WebKey plus its attributes. </p>
   syntax: *o1
-- uid: com.microsoft.azure.keyvault._key_identifier
-  parent: com.microsoft.azure.keyvault
-  href: com.microsoft.azure.keyvault._key_identifier.yml
-  name: KeyIdentifier
-  nameWithType: KeyIdentifier
-  fullName: com.microsoft.azure.keyvault.KeyIdentifier
-  type: Class
-  summary: <p>The Key Vault key identifier. </p>
-  syntax:
-    content: public class KeyIdentifier

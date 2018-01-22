@@ -20,10 +20,10 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyVerifyParameters.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
+      branch: v1.0.0
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyVerifyParameters.java
-    startLine: 19
+    startLine: 15
   package: com.microsoft.azure.keyvault.models
   summary: <p>The key verify parameters. </p>
   syntax: &o1
@@ -44,7 +44,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyVerifyParameters.java
-    startLine: 45
+    startLine: 42
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the algorithm value.</p>
@@ -69,7 +69,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyVerifyParameters.java
-    startLine: 65
+    startLine: 62
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the digest value.</p>
@@ -94,7 +94,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyVerifyParameters.java
-    startLine: 92
+    startLine: 89
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the signature value.</p>
@@ -119,7 +119,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyVerifyParameters.java
-    startLine: 55
+    startLine: 52
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the algorithm value.</p>
@@ -148,7 +148,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyVerifyParameters.java
-    startLine: 78
+    startLine: 75
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the digest value.</p>
@@ -177,7 +177,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyVerifyParameters.java
-    startLine: 105
+    startLine: 102
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the signature value.</p>

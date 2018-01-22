@@ -1,0 +1,135 @@
+### YamlMime:ManagedReference
+items:
+- uid: com.microsoft.azure.keyvault.models.custom._issuer_bundle
+  id: _issuer_bundle
+  parent: com.microsoft.azure.keyvault.models.custom
+  children:
+  - com.microsoft.azure.keyvault.models.custom._issuer_bundle.id()
+  - com.microsoft.azure.keyvault.models.custom._issuer_bundle.issuerIdentifier()
+  - com.microsoft.azure.keyvault.models.custom._issuer_bundle.toString()
+  href: com.microsoft.azure.keyvault.models.custom._issuer_bundle.yml
+  langs:
+  - java
+  name: IssuerBundle
+  nameWithType: IssuerBundle
+  fullName: com.microsoft.azure.keyvault.models.custom.IssuerBundle
+  type: Class
+  source:
+    remote: &o0
+      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/custom/IssuerBundle.java
+      branch: v1.0.0
+      repo: https://github.com/Azure/azure-keyvault-java
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/custom/IssuerBundle.java
+    startLine: 10
+  package: com.microsoft.azure.keyvault.models.custom
+  syntax:
+    content: public class IssuerBundle
+  inheritance:
+  - java.lang.Object
+- uid: com.microsoft.azure.keyvault.models.custom._issuer_bundle.id()
+  id: id()
+  parent: com.microsoft.azure.keyvault.models.custom._issuer_bundle
+  href: com.microsoft.azure.keyvault.models.custom._issuer_bundle.yml
+  langs:
+  - java
+  name: id()
+  nameWithType: IssuerBundle.id()
+  fullName: String com.microsoft.azure.keyvault.models.custom.IssuerBundle.id()
+  overload: com.microsoft.azure.keyvault.models.custom._issuer_bundle.id*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/custom/IssuerBundle.java
+    startLine: 22
+  package: com.microsoft.azure.keyvault.models.custom
+  summary: >-
+    <p>Get the id value.</p>
+
+    <p></p>
+  syntax:
+    content: public String id()
+    return:
+      type: "26831127"
+      description: <p>the id value </p>
+- uid: com.microsoft.azure.keyvault.models.custom._issuer_bundle.issuerIdentifier()
+  id: issuerIdentifier()
+  parent: com.microsoft.azure.keyvault.models.custom._issuer_bundle
+  href: com.microsoft.azure.keyvault.models.custom._issuer_bundle.yml
+  langs:
+  - java
+  name: issuerIdentifier()
+  nameWithType: IssuerBundle.issuerIdentifier()
+  fullName: IssuerIdentifier com.microsoft.azure.keyvault.models.custom.IssuerBundle.issuerIdentifier()
+  overload: com.microsoft.azure.keyvault.models.custom._issuer_bundle.issuerIdentifier*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/custom/IssuerBundle.java
+    startLine: 30
+  package: com.microsoft.azure.keyvault.models.custom
+  summary: <p>The issuer identifier. </p>
+  syntax:
+    content: public IssuerIdentifier issuerIdentifier()
+    return:
+      type: com.microsoft.azure.keyvault._issuer_identifier
+      description: <p>identifier for issuer </p>
+- uid: com.microsoft.azure.keyvault.models.custom._issuer_bundle.toString()
+  id: toString()
+  parent: com.microsoft.azure.keyvault.models.custom._issuer_bundle
+  href: com.microsoft.azure.keyvault.models.custom._issuer_bundle.yml
+  langs:
+  - java
+  name: toString()
+  nameWithType: IssuerBundle.toString()
+  fullName: String com.microsoft.azure.keyvault.models.custom.IssuerBundle.toString()
+  overload: com.microsoft.azure.keyvault.models.custom._issuer_bundle.toString*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/custom/IssuerBundle.java
+    startLine: 38
+  package: com.microsoft.azure.keyvault.models.custom
+  syntax:
+    content: public String toString()
+    return:
+      type: "26831127"
+references:
+- uid: "26831127"
+  spec.java:
+  - name: String
+    fullName: String
+- uid: com.microsoft.azure.keyvault.models.custom._issuer_bundle.id*
+  name: id
+  nameWithType: IssuerBundle.id
+  fullName: String com.microsoft.azure.keyvault.models.custom.IssuerBundle.id
+  package: com.microsoft.azure.keyvault.models.custom
+- uid: com.microsoft.azure.keyvault.models.custom._issuer_bundle.issuerIdentifier*
+  name: issuerIdentifier
+  nameWithType: IssuerBundle.issuerIdentifier
+  fullName: IssuerIdentifier com.microsoft.azure.keyvault.models.custom.IssuerBundle.issuerIdentifier
+  package: com.microsoft.azure.keyvault.models.custom
+- uid: com.microsoft.azure.keyvault.models.custom._issuer_bundle.toString*
+  name: toString
+  nameWithType: IssuerBundle.toString
+  fullName: String com.microsoft.azure.keyvault.models.custom.IssuerBundle.toString
+  package: com.microsoft.azure.keyvault.models.custom
+- uid: com.microsoft.azure.keyvault.models._issuer_bundle
+  parent: com.microsoft.azure.keyvault.models
+  href: com.microsoft.azure.keyvault.models._issuer_bundle.yml
+  name: IssuerBundle
+  nameWithType: IssuerBundle
+  fullName: com.microsoft.azure.keyvault.models.IssuerBundle
+  type: Class
+  summary: <p>The issuer for Key Vault certificate. </p>
+  syntax:
+    content: public class IssuerBundle
+- uid: com.microsoft.azure.keyvault._issuer_identifier
+  parent: com.microsoft.azure.keyvault
+  href: com.microsoft.azure.keyvault._issuer_identifier.yml
+  name: IssuerIdentifier
+  nameWithType: IssuerIdentifier
+  fullName: com.microsoft.azure.keyvault.IssuerIdentifier
+  type: Class
+  summary: <p>The issuer identifier. </p>
+  syntax:
+    content: public class IssuerIdentifier

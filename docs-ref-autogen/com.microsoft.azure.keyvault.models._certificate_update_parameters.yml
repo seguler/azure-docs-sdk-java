@@ -20,10 +20,10 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateUpdateParameters.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
+      branch: v1.0.0
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateUpdateParameters.java
-    startLine: 18
+    startLine: 14
   package: com.microsoft.azure.keyvault.models
   summary: <p>The certificate update parameters. </p>
   syntax: &o1
@@ -44,7 +44,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateUpdateParameters.java
-    startLine: 62
+    startLine: 58
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the certificateAttributes value.</p>
@@ -69,7 +69,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateUpdateParameters.java
-    startLine: 42
+    startLine: 38
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the certificatePolicy value.</p>
@@ -94,7 +94,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateUpdateParameters.java
-    startLine: 82
+    startLine: 78
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the tags value.</p>
@@ -119,7 +119,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateUpdateParameters.java
-    startLine: 72
+    startLine: 68
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the certificateAttributes value.</p>
@@ -148,7 +148,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateUpdateParameters.java
-    startLine: 52
+    startLine: 48
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the certificatePolicy value.</p>
@@ -177,7 +177,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateUpdateParameters.java
-    startLine: 92
+    startLine: 88
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the tags value.</p>

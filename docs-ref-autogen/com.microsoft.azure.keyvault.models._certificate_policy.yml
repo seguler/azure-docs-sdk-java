@@ -27,10 +27,10 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
+      branch: v1.0.0
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
-    startLine: 18
+    startLine: 14
   package: com.microsoft.azure.keyvault.models
   summary: <p>Management policy for a certificate. </p>
   syntax: &o1
@@ -51,7 +51,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
-    startLine: 176
+    startLine: 172
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the attributes value.</p>
@@ -76,7 +76,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
-    startLine: 67
+    startLine: 63
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the id value.</p>
@@ -101,7 +101,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
-    startLine: 156
+    startLine: 152
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the issuerParameters value.</p>
@@ -126,7 +126,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
-    startLine: 76
+    startLine: 72
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the keyProperties value.</p>
@@ -151,7 +151,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
-    startLine: 136
+    startLine: 132
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the lifetimeActions value.</p>
@@ -176,7 +176,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
-    startLine: 96
+    startLine: 92
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the secretProperties value.</p>
@@ -201,7 +201,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
-    startLine: 186
+    startLine: 182
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the attributes value.</p>
@@ -230,7 +230,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
-    startLine: 166
+    startLine: 162
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the issuerParameters value.</p>
@@ -259,7 +259,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
-    startLine: 86
+    startLine: 82
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the keyProperties value.</p>
@@ -288,7 +288,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
-    startLine: 146
+    startLine: 142
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the lifetimeActions value.</p>
@@ -317,7 +317,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
-    startLine: 106
+    startLine: 102
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the secretProperties value.</p>
@@ -346,7 +346,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
-    startLine: 126
+    startLine: 122
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the x509CertificateProperties value.</p>
@@ -375,7 +375,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
-    startLine: 116
+    startLine: 112
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the x509CertificateProperties value.</p>

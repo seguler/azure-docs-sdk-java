@@ -18,10 +18,10 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/OrganizationDetails.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
+      branch: v1.0.0
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/OrganizationDetails.java
-    startLine: 18
+    startLine: 14
   package: com.microsoft.azure.keyvault.models
   summary: <p>Details of the organization of the certificate issuer. </p>
   syntax: &o1
@@ -42,7 +42,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/OrganizationDetails.java
-    startLine: 56
+    startLine: 52
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the adminDetails value.</p>
@@ -67,7 +67,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/OrganizationDetails.java
-    startLine: 36
+    startLine: 32
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the id value.</p>
@@ -92,7 +92,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/OrganizationDetails.java
-    startLine: 66
+    startLine: 62
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the adminDetails value.</p>
@@ -121,7 +121,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/OrganizationDetails.java
-    startLine: 46
+    startLine: 42
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the id value.</p>

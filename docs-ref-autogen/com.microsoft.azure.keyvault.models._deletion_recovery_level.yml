@@ -1,0 +1,254 @@
+### YamlMime:ManagedReference
+items:
+- uid: com.microsoft.azure.keyvault.models._deletion_recovery_level
+  id: _deletion_recovery_level
+  parent: com.microsoft.azure.keyvault.models
+  children:
+  - com.microsoft.azure.keyvault.models._deletion_recovery_level.DeletionRecoveryLevel(String)
+  - com.microsoft.azure.keyvault.models._deletion_recovery_level.equals(Object)
+  - com.microsoft.azure.keyvault.models._deletion_recovery_level.hashCode()
+  - com.microsoft.azure.keyvault.models._deletion_recovery_level.PURGEABLE
+  - com.microsoft.azure.keyvault.models._deletion_recovery_level.RECOVERABLE
+  - com.microsoft.azure.keyvault.models._deletion_recovery_level.RECOVERABLE_PROTECTED_SUBSCRIPTION
+  - com.microsoft.azure.keyvault.models._deletion_recovery_level.RECOVERABLE_PURGEABLE
+  - com.microsoft.azure.keyvault.models._deletion_recovery_level.toString()
+  href: com.microsoft.azure.keyvault.models._deletion_recovery_level.yml
+  langs:
+  - java
+  name: DeletionRecoveryLevel
+  nameWithType: DeletionRecoveryLevel
+  fullName: com.microsoft.azure.keyvault.models.DeletionRecoveryLevel
+  type: Class
+  source:
+    remote: &o0
+      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/DeletionRecoveryLevel.java
+      branch: v1.0.0
+      repo: https://github.com/Azure/azure-keyvault-java
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/DeletionRecoveryLevel.java
+    startLine: 13
+  package: com.microsoft.azure.keyvault.models
+  summary: <p>Defines values for <xref uid="com.microsoft.azure.keyvault.models._deletion_recovery_level" data-throw-if-not-resolved="false">DeletionRecoveryLevel</xref>. </p>
+  syntax: &o1
+    content: public class DeletionRecoveryLevel
+  inheritance:
+  - java.lang.Object
+- uid: com.microsoft.azure.keyvault.models._deletion_recovery_level.DeletionRecoveryLevel(String)
+  id: DeletionRecoveryLevel(String)
+  parent: com.microsoft.azure.keyvault.models._deletion_recovery_level
+  href: com.microsoft.azure.keyvault.models._deletion_recovery_level.yml
+  langs:
+  - java
+  name: DeletionRecoveryLevel(String value)
+  nameWithType: DeletionRecoveryLevel.DeletionRecoveryLevel(String value)
+  fullName: com.microsoft.azure.keyvault.models.DeletionRecoveryLevel.DeletionRecoveryLevel(String value)
+  overload: com.microsoft.azure.keyvault.models._deletion_recovery_level.DeletionRecoveryLevel*
+  type: Constructor
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/DeletionRecoveryLevel.java
+    startLine: 32
+  package: com.microsoft.azure.keyvault.models
+  summary: <p>Creates a custom value for <xref uid="com.microsoft.azure.keyvault.models._deletion_recovery_level" data-throw-if-not-resolved="false">DeletionRecoveryLevel</xref>. </p>
+  syntax:
+    content: public DeletionRecoveryLevel(String value)
+    parameters:
+    - id: value
+      type: "26831127"
+      description: <p>the custom value </p>
+- uid: com.microsoft.azure.keyvault.models._deletion_recovery_level.equals(Object)
+  id: equals(Object)
+  parent: com.microsoft.azure.keyvault.models._deletion_recovery_level
+  href: com.microsoft.azure.keyvault.models._deletion_recovery_level.yml
+  langs:
+  - java
+  name: equals(Object obj)
+  nameWithType: DeletionRecoveryLevel.equals(Object obj)
+  fullName: boolean com.microsoft.azure.keyvault.models.DeletionRecoveryLevel.equals(Object obj)
+  overload: com.microsoft.azure.keyvault.models._deletion_recovery_level.equals*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/DeletionRecoveryLevel.java
+    startLine: 48
+  package: com.microsoft.azure.keyvault.models
+  syntax:
+    content: public boolean equals(Object obj)
+    parameters:
+    - id: obj
+      type: "79317049"
+    return:
+      type: 4fc6e284
+- uid: com.microsoft.azure.keyvault.models._deletion_recovery_level.hashCode()
+  id: hashCode()
+  parent: com.microsoft.azure.keyvault.models._deletion_recovery_level
+  href: com.microsoft.azure.keyvault.models._deletion_recovery_level.yml
+  langs:
+  - java
+  name: hashCode()
+  nameWithType: DeletionRecoveryLevel.hashCode()
+  fullName: int com.microsoft.azure.keyvault.models.DeletionRecoveryLevel.hashCode()
+  overload: com.microsoft.azure.keyvault.models._deletion_recovery_level.hashCode*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/DeletionRecoveryLevel.java
+    startLine: 43
+  package: com.microsoft.azure.keyvault.models
+  syntax:
+    content: public int hashCode()
+    return:
+      type: f75371fa
+- uid: com.microsoft.azure.keyvault.models._deletion_recovery_level.PURGEABLE
+  id: PURGEABLE
+  parent: com.microsoft.azure.keyvault.models._deletion_recovery_level
+  href: com.microsoft.azure.keyvault.models._deletion_recovery_level.yml
+  langs:
+  - java
+  name: PURGEABLE
+  nameWithType: DeletionRecoveryLevel.PURGEABLE
+  fullName: final DeletionRecoveryLevel com.microsoft.azure.keyvault.models.DeletionRecoveryLevel.PURGEABLE
+  type: Field
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/DeletionRecoveryLevel.java
+    startLine: 15
+  package: com.microsoft.azure.keyvault.models
+  summary: <p>Static value Purgeable for <xref uid="com.microsoft.azure.keyvault.models._deletion_recovery_level" data-throw-if-not-resolved="false">DeletionRecoveryLevel</xref>. </p>
+  syntax:
+    content: public static final DeletionRecoveryLevel PURGEABLE= new DeletionRecoveryLevel("Purgeable")
+    return:
+      type: 93de0ef9com.microsoft.azure.keyvault.models._deletion_recovery_level
+- uid: com.microsoft.azure.keyvault.models._deletion_recovery_level.RECOVERABLE
+  id: RECOVERABLE
+  parent: com.microsoft.azure.keyvault.models._deletion_recovery_level
+  href: com.microsoft.azure.keyvault.models._deletion_recovery_level.yml
+  langs:
+  - java
+  name: RECOVERABLE
+  nameWithType: DeletionRecoveryLevel.RECOVERABLE
+  fullName: final DeletionRecoveryLevel com.microsoft.azure.keyvault.models.DeletionRecoveryLevel.RECOVERABLE
+  type: Field
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/DeletionRecoveryLevel.java
+    startLine: 21
+  package: com.microsoft.azure.keyvault.models
+  summary: <p>Static value Recoverable for <xref uid="com.microsoft.azure.keyvault.models._deletion_recovery_level" data-throw-if-not-resolved="false">DeletionRecoveryLevel</xref>. </p>
+  syntax:
+    content: public static final DeletionRecoveryLevel RECOVERABLE= new DeletionRecoveryLevel("Recoverable")
+    return:
+      type: 93de0ef9com.microsoft.azure.keyvault.models._deletion_recovery_level
+- uid: com.microsoft.azure.keyvault.models._deletion_recovery_level.RECOVERABLE_PROTECTED_SUBSCRIPTION
+  id: RECOVERABLE_PROTECTED_SUBSCRIPTION
+  parent: com.microsoft.azure.keyvault.models._deletion_recovery_level
+  href: com.microsoft.azure.keyvault.models._deletion_recovery_level.yml
+  langs:
+  - java
+  name: RECOVERABLE_PROTECTED_SUBSCRIPTION
+  nameWithType: DeletionRecoveryLevel.RECOVERABLE_PROTECTED_SUBSCRIPTION
+  fullName: final DeletionRecoveryLevel com.microsoft.azure.keyvault.models.DeletionRecoveryLevel.RECOVERABLE_PROTECTED_SUBSCRIPTION
+  type: Field
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/DeletionRecoveryLevel.java
+    startLine: 24
+  package: com.microsoft.azure.keyvault.models
+  summary: <p>Static value Recoverable+ProtectedSubscription for <xref uid="com.microsoft.azure.keyvault.models._deletion_recovery_level" data-throw-if-not-resolved="false">DeletionRecoveryLevel</xref>. </p>
+  syntax:
+    content: public static final DeletionRecoveryLevel RECOVERABLE_PROTECTED_SUBSCRIPTION= new DeletionRecoveryLevel("Recoverable+ProtectedSubscription")
+    return:
+      type: 93de0ef9com.microsoft.azure.keyvault.models._deletion_recovery_level
+- uid: com.microsoft.azure.keyvault.models._deletion_recovery_level.RECOVERABLE_PURGEABLE
+  id: RECOVERABLE_PURGEABLE
+  parent: com.microsoft.azure.keyvault.models._deletion_recovery_level
+  href: com.microsoft.azure.keyvault.models._deletion_recovery_level.yml
+  langs:
+  - java
+  name: RECOVERABLE_PURGEABLE
+  nameWithType: DeletionRecoveryLevel.RECOVERABLE_PURGEABLE
+  fullName: final DeletionRecoveryLevel com.microsoft.azure.keyvault.models.DeletionRecoveryLevel.RECOVERABLE_PURGEABLE
+  type: Field
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/DeletionRecoveryLevel.java
+    startLine: 18
+  package: com.microsoft.azure.keyvault.models
+  summary: <p>Static value Recoverable+Purgeable for <xref uid="com.microsoft.azure.keyvault.models._deletion_recovery_level" data-throw-if-not-resolved="false">DeletionRecoveryLevel</xref>. </p>
+  syntax:
+    content: public static final DeletionRecoveryLevel RECOVERABLE_PURGEABLE= new DeletionRecoveryLevel("Recoverable+Purgeable")
+    return:
+      type: 93de0ef9com.microsoft.azure.keyvault.models._deletion_recovery_level
+- uid: com.microsoft.azure.keyvault.models._deletion_recovery_level.toString()
+  id: toString()
+  parent: com.microsoft.azure.keyvault.models._deletion_recovery_level
+  href: com.microsoft.azure.keyvault.models._deletion_recovery_level.yml
+  langs:
+  - java
+  name: toString()
+  nameWithType: DeletionRecoveryLevel.toString()
+  fullName: String com.microsoft.azure.keyvault.models.DeletionRecoveryLevel.toString()
+  overload: com.microsoft.azure.keyvault.models._deletion_recovery_level.toString*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/DeletionRecoveryLevel.java
+    startLine: 38
+  package: com.microsoft.azure.keyvault.models
+  syntax:
+    content: public String toString()
+    return:
+      type: "26831127"
+references:
+- uid: 93de0ef9com.microsoft.azure.keyvault.models._deletion_recovery_level
+  spec.java:
+  - name: 'final '
+    fullName: 'final '
+  - uid: com.microsoft.azure.keyvault.models._deletion_recovery_level
+    name: DeletionRecoveryLevel
+    fullName: com.microsoft.azure.keyvault.models.DeletionRecoveryLevel
+    href: com.microsoft.azure.keyvault.models._deletion_recovery_level.yml
+- uid: "26831127"
+  spec.java:
+  - name: String
+    fullName: String
+- uid: com.microsoft.azure.keyvault.models._deletion_recovery_level.DeletionRecoveryLevel*
+  name: DeletionRecoveryLevel
+  nameWithType: DeletionRecoveryLevel.DeletionRecoveryLevel
+  fullName: com.microsoft.azure.keyvault.models.DeletionRecoveryLevel.DeletionRecoveryLevel
+  package: com.microsoft.azure.keyvault.models
+- uid: com.microsoft.azure.keyvault.models._deletion_recovery_level.toString*
+  name: toString
+  nameWithType: DeletionRecoveryLevel.toString
+  fullName: String com.microsoft.azure.keyvault.models.DeletionRecoveryLevel.toString
+  package: com.microsoft.azure.keyvault.models
+- uid: f75371fa
+  spec.java:
+  - name: int
+    fullName: int
+- uid: com.microsoft.azure.keyvault.models._deletion_recovery_level.hashCode*
+  name: hashCode
+  nameWithType: DeletionRecoveryLevel.hashCode
+  fullName: int com.microsoft.azure.keyvault.models.DeletionRecoveryLevel.hashCode
+  package: com.microsoft.azure.keyvault.models
+- uid: "79317049"
+  spec.java:
+  - name: Object
+    fullName: Object
+- uid: 4fc6e284
+  spec.java:
+  - name: boolean
+    fullName: boolean
+- uid: com.microsoft.azure.keyvault.models._deletion_recovery_level.equals*
+  name: equals
+  nameWithType: DeletionRecoveryLevel.equals
+  fullName: boolean com.microsoft.azure.keyvault.models.DeletionRecoveryLevel.equals
+  package: com.microsoft.azure.keyvault.models
+- uid: com.microsoft.azure.keyvault.models._deletion_recovery_level
+  parent: com.microsoft.azure.keyvault.models
+  href: com.microsoft.azure.keyvault.models._deletion_recovery_level.yml
+  name: DeletionRecoveryLevel
+  nameWithType: DeletionRecoveryLevel
+  fullName: com.microsoft.azure.keyvault.models.DeletionRecoveryLevel
+  type: Class
+  summary: <p>Defines values for <xref uid="com.microsoft.azure.keyvault.models._deletion_recovery_level" data-throw-if-not-resolved="false">DeletionRecoveryLevel</xref>. </p>
+  syntax: *o1

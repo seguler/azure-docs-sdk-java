@@ -18,10 +18,10 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerParameters.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
+      branch: v1.0.0
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerParameters.java
-    startLine: 17
+    startLine: 13
   package: com.microsoft.azure.keyvault.models
   summary: <p>Parameters for the issuer of the X509 component of a certificate. </p>
   syntax: &o1
@@ -42,7 +42,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerParameters.java
-    startLine: 56
+    startLine: 52
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the certificateType value.</p>
@@ -67,7 +67,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerParameters.java
-    startLine: 36
+    startLine: 32
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Get the name value.</p>
@@ -92,7 +92,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerParameters.java
-    startLine: 66
+    startLine: 62
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the certificateType value.</p>
@@ -121,7 +121,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerParameters.java
-    startLine: 46
+    startLine: 42
   package: com.microsoft.azure.keyvault.models
   summary: >-
     <p>Set the name value.</p>

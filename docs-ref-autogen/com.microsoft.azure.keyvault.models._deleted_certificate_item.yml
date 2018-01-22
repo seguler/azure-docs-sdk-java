@@ -1,0 +1,336 @@
+### YamlMime:ManagedReference
+items:
+- uid: com.microsoft.azure.keyvault.models._deleted_certificate_item
+  id: _deleted_certificate_item
+  parent: com.microsoft.azure.keyvault.models
+  children:
+  - com.microsoft.azure.keyvault.models._deleted_certificate_item.deletedDate()
+  - com.microsoft.azure.keyvault.models._deleted_certificate_item.recoveryId()
+  - com.microsoft.azure.keyvault.models._deleted_certificate_item.scheduledPurgeDate()
+  - com.microsoft.azure.keyvault.models._deleted_certificate_item.withRecoveryId(String)
+  href: com.microsoft.azure.keyvault.models._deleted_certificate_item.yml
+  langs:
+  - java
+  name: DeletedCertificateItem
+  nameWithType: DeletedCertificateItem
+  fullName: com.microsoft.azure.keyvault.models.DeletedCertificateItem
+  type: Class
+  source:
+    remote: &o0
+      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/DeletedCertificateItem.java
+      branch: v1.0.0
+      repo: https://github.com/Azure/azure-keyvault-java
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/DeletedCertificateItem.java
+    startLine: 16
+  package: com.microsoft.azure.keyvault.models
+  summary: <p>The deleted certificate item containing metadata about the deleted certificate. </p>
+  syntax: &o1
+    content: public class DeletedCertificateItem extends CertificateItem
+  inheritance:
+  - java.lang.Object
+  - com.microsoft.azure.keyvault.models._certificate_item
+  inheritedMembers:
+  - com.microsoft.azure.keyvault.models._certificate_item.attributes()
+  - com.microsoft.azure.keyvault.models._certificate_item.id()
+  - com.microsoft.azure.keyvault.models._certificate_item.tags()
+  - com.microsoft.azure.keyvault.models._certificate_item.withAttributes(CertificateAttributes)
+  - com.microsoft.azure.keyvault.models._certificate_item.withId(String)
+  - com.microsoft.azure.keyvault.models._certificate_item.withTags(Map<String, String>)
+  - com.microsoft.azure.keyvault.models._certificate_item.withX509Thumbprint(byte [])
+  - com.microsoft.azure.keyvault.models._certificate_item.x509Thumbprint()
+- uid: com.microsoft.azure.keyvault.models._deleted_certificate_item.deletedDate()
+  id: deletedDate()
+  parent: com.microsoft.azure.keyvault.models._deleted_certificate_item
+  href: com.microsoft.azure.keyvault.models._deleted_certificate_item.yml
+  langs:
+  - java
+  name: deletedDate()
+  nameWithType: DeletedCertificateItem.deletedDate()
+  fullName: DateTime com.microsoft.azure.keyvault.models.DeletedCertificateItem.deletedDate()
+  overload: com.microsoft.azure.keyvault.models._deleted_certificate_item.deletedDate*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/DeletedCertificateItem.java
+    startLine: 73
+  package: com.microsoft.azure.keyvault.models
+  summary: >-
+    <p>Get the deletedDate value.</p>
+
+    <p></p>
+  syntax:
+    content: public DateTime deletedDate()
+    return:
+      type: 230df18c
+      description: <p>the deletedDate value </p>
+- uid: com.microsoft.azure.keyvault.models._deleted_certificate_item.recoveryId()
+  id: recoveryId()
+  parent: com.microsoft.azure.keyvault.models._deleted_certificate_item
+  href: com.microsoft.azure.keyvault.models._deleted_certificate_item.yml
+  langs:
+  - java
+  name: recoveryId()
+  nameWithType: DeletedCertificateItem.recoveryId()
+  fullName: String com.microsoft.azure.keyvault.models.DeletedCertificateItem.recoveryId()
+  overload: com.microsoft.azure.keyvault.models._deleted_certificate_item.recoveryId*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/DeletedCertificateItem.java
+    startLine: 41
+  package: com.microsoft.azure.keyvault.models
+  summary: >-
+    <p>Get the recoveryId value.</p>
+
+    <p></p>
+  syntax:
+    content: public String recoveryId()
+    return:
+      type: "26831127"
+      description: <p>the recoveryId value </p>
+- uid: com.microsoft.azure.keyvault.models._deleted_certificate_item.scheduledPurgeDate()
+  id: scheduledPurgeDate()
+  parent: com.microsoft.azure.keyvault.models._deleted_certificate_item
+  href: com.microsoft.azure.keyvault.models._deleted_certificate_item.yml
+  langs:
+  - java
+  name: scheduledPurgeDate()
+  nameWithType: DeletedCertificateItem.scheduledPurgeDate()
+  fullName: DateTime com.microsoft.azure.keyvault.models.DeletedCertificateItem.scheduledPurgeDate()
+  overload: com.microsoft.azure.keyvault.models._deleted_certificate_item.scheduledPurgeDate*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/DeletedCertificateItem.java
+    startLine: 61
+  package: com.microsoft.azure.keyvault.models
+  summary: >-
+    <p>Get the scheduledPurgeDate value.</p>
+
+    <p></p>
+  syntax:
+    content: public DateTime scheduledPurgeDate()
+    return:
+      type: 230df18c
+      description: <p>the scheduledPurgeDate value </p>
+- uid: com.microsoft.azure.keyvault.models._deleted_certificate_item.withRecoveryId(String)
+  id: withRecoveryId(String)
+  parent: com.microsoft.azure.keyvault.models._deleted_certificate_item
+  href: com.microsoft.azure.keyvault.models._deleted_certificate_item.yml
+  langs:
+  - java
+  name: withRecoveryId(String recoveryId)
+  nameWithType: DeletedCertificateItem.withRecoveryId(String recoveryId)
+  fullName: DeletedCertificateItem com.microsoft.azure.keyvault.models.DeletedCertificateItem.withRecoveryId(String recoveryId)
+  overload: com.microsoft.azure.keyvault.models._deleted_certificate_item.withRecoveryId*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/DeletedCertificateItem.java
+    startLine: 51
+  package: com.microsoft.azure.keyvault.models
+  summary: >-
+    <p>Set the recoveryId value.</p>
+
+    <p></p>
+  syntax:
+    content: public DeletedCertificateItem withRecoveryId(String recoveryId)
+    parameters:
+    - id: recoveryId
+      type: "26831127"
+      description: <p>the recoveryId value to set </p>
+    return:
+      type: com.microsoft.azure.keyvault.models._deleted_certificate_item
+      description: <p>the <xref uid="com.microsoft.azure.keyvault.models._deleted_certificate_item" data-throw-if-not-resolved="false">DeletedCertificateItem</xref> object itself. </p>
+references:
+- uid: "26831127"
+  spec.java:
+  - name: String
+    fullName: String
+- uid: com.microsoft.azure.keyvault.models._deleted_certificate_item.recoveryId*
+  name: recoveryId
+  nameWithType: DeletedCertificateItem.recoveryId
+  fullName: String com.microsoft.azure.keyvault.models.DeletedCertificateItem.recoveryId
+  package: com.microsoft.azure.keyvault.models
+- uid: com.microsoft.azure.keyvault.models._deleted_certificate_item.withRecoveryId*
+  name: withRecoveryId
+  nameWithType: DeletedCertificateItem.withRecoveryId
+  fullName: DeletedCertificateItem com.microsoft.azure.keyvault.models.DeletedCertificateItem.withRecoveryId
+  package: com.microsoft.azure.keyvault.models
+- uid: 230df18c
+  spec.java:
+  - name: DateTime
+    fullName: DateTime
+- uid: com.microsoft.azure.keyvault.models._deleted_certificate_item.scheduledPurgeDate*
+  name: scheduledPurgeDate
+  nameWithType: DeletedCertificateItem.scheduledPurgeDate
+  fullName: DateTime com.microsoft.azure.keyvault.models.DeletedCertificateItem.scheduledPurgeDate
+  package: com.microsoft.azure.keyvault.models
+- uid: com.microsoft.azure.keyvault.models._deleted_certificate_item.deletedDate*
+  name: deletedDate
+  nameWithType: DeletedCertificateItem.deletedDate
+  fullName: DateTime com.microsoft.azure.keyvault.models.DeletedCertificateItem.deletedDate
+  package: com.microsoft.azure.keyvault.models
+- uid: com.microsoft.azure.keyvault.models._certificate_item.attributes()
+  parent: com.microsoft.azure.keyvault.models._certificate_item
+  href: com.microsoft.azure.keyvault.models._certificate_item.yml
+  name: attributes()
+  nameWithType: CertificateItem.attributes()
+  fullName: CertificateAttributes com.microsoft.azure.keyvault.models.CertificateItem.attributes()
+  type: Method
+  summary: >-
+    <p>Get the attributes value.</p>
+
+    <p></p>
+  syntax:
+    content: public CertificateAttributes attributes()
+    return:
+      type: com.microsoft.azure.keyvault.models._certificate_attributes
+      description: <p>the attributes value </p>
+- uid: com.microsoft.azure.keyvault.models._certificate_item.id()
+  parent: com.microsoft.azure.keyvault.models._certificate_item
+  href: com.microsoft.azure.keyvault.models._certificate_item.yml
+  name: id()
+  nameWithType: CertificateItem.id()
+  fullName: String com.microsoft.azure.keyvault.models.CertificateItem.id()
+  type: Method
+  summary: >-
+    <p>Get the id value.</p>
+
+    <p></p>
+  syntax:
+    content: public String id()
+    return:
+      type: "26831127"
+      description: <p>the id value </p>
+- uid: com.microsoft.azure.keyvault.models._certificate_item.tags()
+  parent: com.microsoft.azure.keyvault.models._certificate_item
+  href: com.microsoft.azure.keyvault.models._certificate_item.yml
+  name: tags()
+  nameWithType: CertificateItem.tags()
+  fullName: Map<String, String> com.microsoft.azure.keyvault.models.CertificateItem.tags()
+  type: Method
+  summary: >-
+    <p>Get the tags value.</p>
+
+    <p></p>
+  syntax:
+    content: public Map<String, String> tags()
+    return:
+      type: 689c8cb5
+      description: <p>the tags value </p>
+- uid: com.microsoft.azure.keyvault.models._certificate_item.withAttributes(CertificateAttributes)
+  parent: com.microsoft.azure.keyvault.models._certificate_item
+  href: com.microsoft.azure.keyvault.models._certificate_item.yml
+  name: withAttributes(CertificateAttributes attributes)
+  nameWithType: CertificateItem.withAttributes(CertificateAttributes attributes)
+  fullName: CertificateItem com.microsoft.azure.keyvault.models.CertificateItem.withAttributes(CertificateAttributes attributes)
+  type: Method
+  summary: >-
+    <p>Set the attributes value.</p>
+
+    <p></p>
+  syntax:
+    content: public CertificateItem withAttributes(CertificateAttributes attributes)
+    parameters:
+    - id: attributes
+      type: com.microsoft.azure.keyvault.models._certificate_attributes
+      description: <p>the attributes value to set </p>
+    return:
+      type: com.microsoft.azure.keyvault.models._certificate_item
+      description: <p>the <xref uid="com.microsoft.azure.keyvault.models._certificate_item" data-throw-if-not-resolved="false">CertificateItem</xref> object itself. </p>
+- uid: com.microsoft.azure.keyvault.models._certificate_item.withId(String)
+  parent: com.microsoft.azure.keyvault.models._certificate_item
+  href: com.microsoft.azure.keyvault.models._certificate_item.yml
+  name: withId(String id)
+  nameWithType: CertificateItem.withId(String id)
+  fullName: CertificateItem com.microsoft.azure.keyvault.models.CertificateItem.withId(String id)
+  type: Method
+  summary: >-
+    <p>Set the id value.</p>
+
+    <p></p>
+  syntax:
+    content: public CertificateItem withId(String id)
+    parameters:
+    - id: id
+      type: "26831127"
+      description: <p>the id value to set </p>
+    return:
+      type: com.microsoft.azure.keyvault.models._certificate_item
+      description: <p>the <xref uid="com.microsoft.azure.keyvault.models._certificate_item" data-throw-if-not-resolved="false">CertificateItem</xref> object itself. </p>
+- uid: com.microsoft.azure.keyvault.models._certificate_item.withTags(Map<String, String>)
+  parent: com.microsoft.azure.keyvault.models._certificate_item
+  href: com.microsoft.azure.keyvault.models._certificate_item.yml
+  name: withTags(Map<String, String> tags)
+  nameWithType: CertificateItem.withTags(Map<String, String> tags)
+  fullName: CertificateItem com.microsoft.azure.keyvault.models.CertificateItem.withTags(Map<String, String> tags)
+  type: Method
+  summary: >-
+    <p>Set the tags value.</p>
+
+    <p></p>
+  syntax:
+    content: public CertificateItem withTags(Map<String, String> tags)
+    parameters:
+    - id: tags
+      type: 689c8cb5
+      description: <p>the tags value to set </p>
+    return:
+      type: com.microsoft.azure.keyvault.models._certificate_item
+      description: <p>the <xref uid="com.microsoft.azure.keyvault.models._certificate_item" data-throw-if-not-resolved="false">CertificateItem</xref> object itself. </p>
+- uid: com.microsoft.azure.keyvault.models._certificate_item.withX509Thumbprint(byte [])
+  parent: com.microsoft.azure.keyvault.models._certificate_item
+  href: com.microsoft.azure.keyvault.models._certificate_item.yml
+  name: withX509Thumbprint(byte[] x509Thumbprint)
+  nameWithType: CertificateItem.withX509Thumbprint(byte[] x509Thumbprint)
+  fullName: CertificateItem com.microsoft.azure.keyvault.models.CertificateItem.withX509Thumbprint(byte[] x509Thumbprint)
+  type: Method
+  summary: >-
+    <p>Set the x509Thumbprint value.</p>
+
+    <p></p>
+  syntax:
+    content: public CertificateItem withX509Thumbprint(byte[] x509Thumbprint)
+    parameters:
+    - id: x509Thumbprint
+      type: ccd9418d
+      description: <p>the x509Thumbprint value to set </p>
+    return:
+      type: com.microsoft.azure.keyvault.models._certificate_item
+      description: <p>the <xref uid="com.microsoft.azure.keyvault.models._certificate_item" data-throw-if-not-resolved="false">CertificateItem</xref> object itself. </p>
+- uid: com.microsoft.azure.keyvault.models._certificate_item.x509Thumbprint()
+  parent: com.microsoft.azure.keyvault.models._certificate_item
+  href: com.microsoft.azure.keyvault.models._certificate_item.yml
+  name: x509Thumbprint()
+  nameWithType: CertificateItem.x509Thumbprint()
+  fullName: byte [] com.microsoft.azure.keyvault.models.CertificateItem.x509Thumbprint()
+  type: Method
+  summary: >-
+    <p>Get the x509Thumbprint value.</p>
+
+    <p></p>
+  syntax:
+    content: public byte [] x509Thumbprint()
+    return:
+      type: ccd9418d
+      description: <p>the x509Thumbprint value </p>
+- uid: com.microsoft.azure.keyvault.models._certificate_item
+  parent: com.microsoft.azure.keyvault.models
+  href: com.microsoft.azure.keyvault.models._certificate_item.yml
+  name: CertificateItem
+  nameWithType: CertificateItem
+  fullName: com.microsoft.azure.keyvault.models.CertificateItem
+  type: Class
+  summary: <p>The certificate item containing certificate metadata. </p>
+  syntax:
+    content: public class CertificateItem
+- uid: com.microsoft.azure.keyvault.models._deleted_certificate_item
+  parent: com.microsoft.azure.keyvault.models
+  href: com.microsoft.azure.keyvault.models._deleted_certificate_item.yml
+  name: DeletedCertificateItem
+  nameWithType: DeletedCertificateItem
+  fullName: com.microsoft.azure.keyvault.models.DeletedCertificateItem
+  type: Class
+  summary: <p>The deleted certificate item containing metadata about the deleted certificate. </p>
+  syntax: *o1

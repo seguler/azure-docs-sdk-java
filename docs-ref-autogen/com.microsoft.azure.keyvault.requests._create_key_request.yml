@@ -4,6 +4,7 @@ items:
   id: _create_key_request
   parent: com.microsoft.azure.keyvault.requests
   children:
+  - com.microsoft.azure.keyvault.requests._create_key_request.curve()
   - com.microsoft.azure.keyvault.requests._create_key_request.keyAttributes()
   - com.microsoft.azure.keyvault.requests._create_key_request.keyName()
   - com.microsoft.azure.keyvault.requests._create_key_request.keyOperations()
@@ -21,16 +22,37 @@ items:
   source:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
+      branch: v1.0.0
       repo: https://github.com/Azure/azure-keyvault-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
-    startLine: 15
+    startLine: 16
   package: com.microsoft.azure.keyvault.requests
   summary: <p>The create key request class. </p>
   syntax:
     content: public class CreateKeyRequest
   inheritance:
   - java.lang.Object
+- uid: com.microsoft.azure.keyvault.requests._create_key_request.curve()
+  id: curve()
+  parent: com.microsoft.azure.keyvault.requests._create_key_request
+  href: com.microsoft.azure.keyvault.requests._create_key_request.yml
+  langs:
+  - java
+  name: curve()
+  nameWithType: CreateKeyRequest.curve()
+  fullName: JsonWebKeyCurveName com.microsoft.azure.keyvault.requests.CreateKeyRequest.curve()
+  overload: com.microsoft.azure.keyvault.requests._create_key_request.curve*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
+    startLine: 218
+  package: com.microsoft.azure.keyvault.requests
+  syntax:
+    content: public JsonWebKeyCurveName curve()
+    return:
+      type: com.microsoft.azure.keyvault.models._json_web_key_curve_name
+      description: <p>the curve </p>
 - uid: com.microsoft.azure.keyvault.requests._create_key_request.keyAttributes()
   id: keyAttributes()
   parent: com.microsoft.azure.keyvault.requests._create_key_request
@@ -45,7 +67,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
-    startLine: 182
+    startLine: 204
   package: com.microsoft.azure.keyvault.requests
   syntax:
     content: public KeyAttributes keyAttributes()
@@ -66,7 +88,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
-    startLine: 154
+    startLine: 176
   package: com.microsoft.azure.keyvault.requests
   syntax:
     content: public String keyName()
@@ -87,7 +109,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
-    startLine: 175
+    startLine: 197
   package: com.microsoft.azure.keyvault.requests
   syntax:
     content: public List<JsonWebKeyOperation> keyOperations()
@@ -108,7 +130,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
-    startLine: 168
+    startLine: 190
   package: com.microsoft.azure.keyvault.requests
   syntax:
     content: public Integer keySize()
@@ -129,7 +151,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
-    startLine: 161
+    startLine: 183
   package: com.microsoft.azure.keyvault.requests
   syntax:
     content: public JsonWebKeyType keyType()
@@ -150,7 +172,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
-    startLine: 189
+    startLine: 211
   package: com.microsoft.azure.keyvault.requests
   syntax:
     content: public Map<String, String> tags()
@@ -171,7 +193,7 @@ items:
   source:
     remote: *o0
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
-    startLine: 147
+    startLine: 169
   package: com.microsoft.azure.keyvault.requests
   syntax:
     content: public String vaultBaseUrl()
@@ -236,6 +258,11 @@ references:
   nameWithType: CreateKeyRequest.tags
   fullName: Map<String, String> com.microsoft.azure.keyvault.requests.CreateKeyRequest.tags
   package: com.microsoft.azure.keyvault.requests
+- uid: com.microsoft.azure.keyvault.requests._create_key_request.curve*
+  name: curve
+  nameWithType: CreateKeyRequest.curve
+  fullName: JsonWebKeyCurveName com.microsoft.azure.keyvault.requests.CreateKeyRequest.curve
+  package: com.microsoft.azure.keyvault.requests
 - uid: com.microsoft.azure.keyvault.webkey._json_web_key_type
   parent: com.microsoft.azure.keyvault.webkey
   href: com.microsoft.azure.keyvault.webkey._json_web_key_type.yml
@@ -266,3 +293,13 @@ references:
   summary: <p>The attributes of a key managed by the key vault service. </p>
   syntax:
     content: public class KeyAttributes
+- uid: com.microsoft.azure.keyvault.models._json_web_key_curve_name
+  parent: com.microsoft.azure.keyvault.models
+  href: com.microsoft.azure.keyvault.models._json_web_key_curve_name.yml
+  name: JsonWebKeyCurveName
+  nameWithType: JsonWebKeyCurveName
+  fullName: com.microsoft.azure.keyvault.models.JsonWebKeyCurveName
+  type: Class
+  summary: <p>Defines values for <xref uid="com.microsoft.azure.keyvault.models._json_web_key_curve_name" data-throw-if-not-resolved="false">JsonWebKeyCurveName</xref>. </p>
+  syntax:
+    content: public class JsonWebKeyCurveName

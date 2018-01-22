@@ -1,0 +1,273 @@
+### YamlMime:ManagedReference
+items:
+- uid: com.microsoft.azure.keyvault.models.custom._certificate_bundle
+  id: _certificate_bundle
+  parent: com.microsoft.azure.keyvault.models.custom
+  children:
+  - com.microsoft.azure.keyvault.models.custom._certificate_bundle.certificateIdentifier()
+  - com.microsoft.azure.keyvault.models.custom._certificate_bundle.id()
+  - com.microsoft.azure.keyvault.models.custom._certificate_bundle.keyIdentifier()
+  - com.microsoft.azure.keyvault.models.custom._certificate_bundle.kid()
+  - com.microsoft.azure.keyvault.models.custom._certificate_bundle.secretIdentifier()
+  - com.microsoft.azure.keyvault.models.custom._certificate_bundle.sid()
+  - com.microsoft.azure.keyvault.models.custom._certificate_bundle.toString()
+  href: com.microsoft.azure.keyvault.models.custom._certificate_bundle.yml
+  langs:
+  - java
+  name: CertificateBundle
+  nameWithType: CertificateBundle
+  fullName: com.microsoft.azure.keyvault.models.custom.CertificateBundle
+  type: Class
+  source:
+    remote: &o0
+      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/custom/CertificateBundle.java
+      branch: v1.0.0
+      repo: https://github.com/Azure/azure-keyvault-java
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/custom/CertificateBundle.java
+    startLine: 12
+  package: com.microsoft.azure.keyvault.models.custom
+  syntax:
+    content: public class CertificateBundle
+  inheritance:
+  - java.lang.Object
+- uid: com.microsoft.azure.keyvault.models.custom._certificate_bundle.certificateIdentifier()
+  id: certificateIdentifier()
+  parent: com.microsoft.azure.keyvault.models.custom._certificate_bundle
+  href: com.microsoft.azure.keyvault.models.custom._certificate_bundle.yml
+  langs:
+  - java
+  name: certificateIdentifier()
+  nameWithType: CertificateBundle.certificateIdentifier()
+  fullName: CertificateIdentifier com.microsoft.azure.keyvault.models.custom.CertificateBundle.certificateIdentifier()
+  overload: com.microsoft.azure.keyvault.models.custom._certificate_bundle.certificateIdentifier*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/custom/CertificateBundle.java
+    startLine: 64
+  package: com.microsoft.azure.keyvault.models.custom
+  summary: <p>The certificate identifier. </p>
+  syntax:
+    content: public CertificateIdentifier certificateIdentifier()
+    return:
+      type: com.microsoft.azure.keyvault._certificate_identifier
+      description: <p>certificate identifier </p>
+- uid: com.microsoft.azure.keyvault.models.custom._certificate_bundle.id()
+  id: id()
+  parent: com.microsoft.azure.keyvault.models.custom._certificate_bundle
+  href: com.microsoft.azure.keyvault.models.custom._certificate_bundle.yml
+  langs:
+  - java
+  name: id()
+  nameWithType: CertificateBundle.id()
+  fullName: String com.microsoft.azure.keyvault.models.custom.CertificateBundle.id()
+  overload: com.microsoft.azure.keyvault.models.custom._certificate_bundle.id*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/custom/CertificateBundle.java
+    startLine: 37
+  package: com.microsoft.azure.keyvault.models.custom
+  summary: >-
+    <p>Get the id value.</p>
+
+    <p></p>
+  syntax:
+    content: public String id()
+    return:
+      type: "26831127"
+      description: <p>the id value </p>
+- uid: com.microsoft.azure.keyvault.models.custom._certificate_bundle.keyIdentifier()
+  id: keyIdentifier()
+  parent: com.microsoft.azure.keyvault.models.custom._certificate_bundle
+  href: com.microsoft.azure.keyvault.models.custom._certificate_bundle.yml
+  langs:
+  - java
+  name: keyIdentifier()
+  nameWithType: CertificateBundle.keyIdentifier()
+  fullName: KeyIdentifier com.microsoft.azure.keyvault.models.custom.CertificateBundle.keyIdentifier()
+  overload: com.microsoft.azure.keyvault.models.custom._certificate_bundle.keyIdentifier*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/custom/CertificateBundle.java
+    startLine: 86
+  package: com.microsoft.azure.keyvault.models.custom
+  summary: <p>The key identifier. </p>
+  syntax:
+    content: public KeyIdentifier keyIdentifier()
+    return:
+      type: com.microsoft.azure.keyvault._key_identifier
+      description: <p>key identifier </p>
+- uid: com.microsoft.azure.keyvault.models.custom._certificate_bundle.kid()
+  id: kid()
+  parent: com.microsoft.azure.keyvault.models.custom._certificate_bundle
+  href: com.microsoft.azure.keyvault.models.custom._certificate_bundle.yml
+  langs:
+  - java
+  name: kid()
+  nameWithType: CertificateBundle.kid()
+  fullName: String com.microsoft.azure.keyvault.models.custom.CertificateBundle.kid()
+  overload: com.microsoft.azure.keyvault.models.custom._certificate_bundle.kid*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/custom/CertificateBundle.java
+    startLine: 46
+  package: com.microsoft.azure.keyvault.models.custom
+  summary: >-
+    <p>Get the kid value.</p>
+
+    <p></p>
+  syntax:
+    content: public String kid()
+    return:
+      type: "26831127"
+      description: <p>the kid value </p>
+- uid: com.microsoft.azure.keyvault.models.custom._certificate_bundle.secretIdentifier()
+  id: secretIdentifier()
+  parent: com.microsoft.azure.keyvault.models.custom._certificate_bundle
+  href: com.microsoft.azure.keyvault.models.custom._certificate_bundle.yml
+  langs:
+  - java
+  name: secretIdentifier()
+  nameWithType: CertificateBundle.secretIdentifier()
+  fullName: SecretIdentifier com.microsoft.azure.keyvault.models.custom.CertificateBundle.secretIdentifier()
+  overload: com.microsoft.azure.keyvault.models.custom._certificate_bundle.secretIdentifier*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/custom/CertificateBundle.java
+    startLine: 75
+  package: com.microsoft.azure.keyvault.models.custom
+  summary: <p>The secret identifier. </p>
+  syntax:
+    content: public SecretIdentifier secretIdentifier()
+    return:
+      type: com.microsoft.azure.keyvault._secret_identifier
+      description: <p>secret identifier </p>
+- uid: com.microsoft.azure.keyvault.models.custom._certificate_bundle.sid()
+  id: sid()
+  parent: com.microsoft.azure.keyvault.models.custom._certificate_bundle
+  href: com.microsoft.azure.keyvault.models.custom._certificate_bundle.yml
+  langs:
+  - java
+  name: sid()
+  nameWithType: CertificateBundle.sid()
+  fullName: String com.microsoft.azure.keyvault.models.custom.CertificateBundle.sid()
+  overload: com.microsoft.azure.keyvault.models.custom._certificate_bundle.sid*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/custom/CertificateBundle.java
+    startLine: 55
+  package: com.microsoft.azure.keyvault.models.custom
+  summary: >-
+    <p>Get the sid value.</p>
+
+    <p></p>
+  syntax:
+    content: public String sid()
+    return:
+      type: "26831127"
+      description: <p>the sid value </p>
+- uid: com.microsoft.azure.keyvault.models.custom._certificate_bundle.toString()
+  id: toString()
+  parent: com.microsoft.azure.keyvault.models.custom._certificate_bundle
+  href: com.microsoft.azure.keyvault.models.custom._certificate_bundle.yml
+  langs:
+  - java
+  name: toString()
+  nameWithType: CertificateBundle.toString()
+  fullName: String com.microsoft.azure.keyvault.models.custom.CertificateBundle.toString()
+  overload: com.microsoft.azure.keyvault.models.custom._certificate_bundle.toString*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/custom/CertificateBundle.java
+    startLine: 94
+  package: com.microsoft.azure.keyvault.models.custom
+  syntax:
+    content: public String toString()
+    return:
+      type: "26831127"
+references:
+- uid: "26831127"
+  spec.java:
+  - name: String
+    fullName: String
+- uid: com.microsoft.azure.keyvault.models.custom._certificate_bundle.id*
+  name: id
+  nameWithType: CertificateBundle.id
+  fullName: String com.microsoft.azure.keyvault.models.custom.CertificateBundle.id
+  package: com.microsoft.azure.keyvault.models.custom
+- uid: com.microsoft.azure.keyvault.models.custom._certificate_bundle.kid*
+  name: kid
+  nameWithType: CertificateBundle.kid
+  fullName: String com.microsoft.azure.keyvault.models.custom.CertificateBundle.kid
+  package: com.microsoft.azure.keyvault.models.custom
+- uid: com.microsoft.azure.keyvault.models.custom._certificate_bundle.sid*
+  name: sid
+  nameWithType: CertificateBundle.sid
+  fullName: String com.microsoft.azure.keyvault.models.custom.CertificateBundle.sid
+  package: com.microsoft.azure.keyvault.models.custom
+- uid: com.microsoft.azure.keyvault.models.custom._certificate_bundle.certificateIdentifier*
+  name: certificateIdentifier
+  nameWithType: CertificateBundle.certificateIdentifier
+  fullName: CertificateIdentifier com.microsoft.azure.keyvault.models.custom.CertificateBundle.certificateIdentifier
+  package: com.microsoft.azure.keyvault.models.custom
+- uid: com.microsoft.azure.keyvault.models.custom._certificate_bundle.secretIdentifier*
+  name: secretIdentifier
+  nameWithType: CertificateBundle.secretIdentifier
+  fullName: SecretIdentifier com.microsoft.azure.keyvault.models.custom.CertificateBundle.secretIdentifier
+  package: com.microsoft.azure.keyvault.models.custom
+- uid: com.microsoft.azure.keyvault.models.custom._certificate_bundle.keyIdentifier*
+  name: keyIdentifier
+  nameWithType: CertificateBundle.keyIdentifier
+  fullName: KeyIdentifier com.microsoft.azure.keyvault.models.custom.CertificateBundle.keyIdentifier
+  package: com.microsoft.azure.keyvault.models.custom
+- uid: com.microsoft.azure.keyvault.models.custom._certificate_bundle.toString*
+  name: toString
+  nameWithType: CertificateBundle.toString
+  fullName: String com.microsoft.azure.keyvault.models.custom.CertificateBundle.toString
+  package: com.microsoft.azure.keyvault.models.custom
+- uid: com.microsoft.azure.keyvault.models._certificate_bundle
+  parent: com.microsoft.azure.keyvault.models
+  href: com.microsoft.azure.keyvault.models._certificate_bundle.yml
+  name: CertificateBundle
+  nameWithType: CertificateBundle
+  fullName: com.microsoft.azure.keyvault.models.CertificateBundle
+  type: Class
+  summary: <p>A certificate bundle consists of a certificate (X509) plus its attributes. </p>
+  syntax:
+    content: public class CertificateBundle extends CertificateBundle
+- uid: com.microsoft.azure.keyvault._certificate_identifier
+  parent: com.microsoft.azure.keyvault
+  href: com.microsoft.azure.keyvault._certificate_identifier.yml
+  name: CertificateIdentifier
+  nameWithType: CertificateIdentifier
+  fullName: com.microsoft.azure.keyvault.CertificateIdentifier
+  type: Class
+  summary: <p>The certificate identifier. </p>
+  syntax:
+    content: public class CertificateIdentifier
+- uid: com.microsoft.azure.keyvault._secret_identifier
+  parent: com.microsoft.azure.keyvault
+  href: com.microsoft.azure.keyvault._secret_identifier.yml
+  name: SecretIdentifier
+  nameWithType: SecretIdentifier
+  fullName: com.microsoft.azure.keyvault.SecretIdentifier
+  type: Class
+  summary: <p>Key Vault secret identifier. </p>
+  syntax:
+    content: public class SecretIdentifier
+- uid: com.microsoft.azure.keyvault._key_identifier
+  parent: com.microsoft.azure.keyvault
+  href: com.microsoft.azure.keyvault._key_identifier.yml
+  name: KeyIdentifier
+  nameWithType: KeyIdentifier
+  fullName: com.microsoft.azure.keyvault.KeyIdentifier
+  type: Class
+  summary: <p>The Key Vault key identifier. </p>
+  syntax:
+    content: public class KeyIdentifier
