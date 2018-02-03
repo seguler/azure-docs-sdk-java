@@ -13020,9 +13020,6 @@
   - uid: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_device_au78977a7b20cad550d7fd1a5ed0c97c89
     name: AmqpsDeviceAuthenticationCBSTokenRenewalTask
     href: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_device_au78977a7b20cad550d7fd1a5ed0c97c89.yml
-  - uid: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_device_authentication_s_a_s
-    name: AmqpsDeviceAuthenticationSAS
-    href: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_device_authentication_s_a_s.yml
   - uid: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_device_authentication_state
     name: AmqpsDeviceAuthenticationState
     href: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_device_authentication_state.yml
